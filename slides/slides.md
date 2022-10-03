@@ -6,7 +6,7 @@ author:
 - Valerio Maggio
 keywords: ["Code Review", "Software Sustainability Institute", "Research Software"]
 ---
-# Code review?
+### Code review?
 
 -   Viewed as an important practice in the software industry.
 -   Key step in contributing to most software projects (gatekeeping).
@@ -16,7 +16,7 @@ keywords: ["Code Review", "Software Sustainability Institute", "Research Softwar
     -   Spread knowledge
     -   Training new developers
 
-# Not a peer review for code
+### Not a peer review for code
 
 -   Code review **throughout the research process**:
     -   Frequent
@@ -27,17 +27,17 @@ keywords: ["Code Review", "Software Sustainability Institute", "Research Softwar
 -   Can be asynchronous (GitHub's Pull Requests) or synchronous (in
     person chat).
 
-# CODECHECK
+### CODECHECK
 
 Just a mention
 
-# Two contexts
+### Two contexts
 
 1.  Individual developers writing their own specific software.
 2.  Developers collaboratin on a common codebase.
     -   Code review as gatekeeping.
 
-# Why code reviews
+### Why code reviews
 
 Modern Code Review: A Case Study at Google (Sadowski 2018)
 
@@ -49,7 +49,7 @@ Practices (McLeod et al 1017)
 
 Code review by and for scientists
 
-# Code review for software quality 1
+### Code review for software quality 1
 
 1.  Defects
 2.  Code improvements
@@ -66,7 +66,7 @@ complying to a naming scheme, identifying code smells.
 
 :::
 
-# Code review for software quality 2
+### Code review for software quality 2
 
 ![img](img/defects-improvement-bachelli-bird2013.png)
 
@@ -80,7 +80,7 @@ But code review is clearly effective for improving code.
 
 :::
 
-# Understandability matters
+### Understandability matters
 
 ![img](img/readable-code.jpg)
 
@@ -98,7 +98,7 @@ Understandability becomes a prime quality for research software.
 
 :::
 
-# Knowledge transfer
+### Knowledge transfer
 
 Code review is a peer learning activity.
 
@@ -111,7 +111,7 @@ Code review is a peer learning activity.
     # ...
     filepath = datadir_path / Path(datafile)
 
-# Better team awareness
+### Better team awareness
 
 Even if not working on *exactly* the same project, regular code
 reviews enable awareness of what others are doing.
@@ -120,11 +120,11 @@ reviews enable awareness of what others are doing.
 -   Enhanced collaboration
 -   Longer term resilience of project(s) (Bus factor!)
 
-# Code review is challenging
+### Code review is challenging
 
 A lot of content available, but what about **research software**?
 
-# Code review is time and energy
+### Code review is time and energy
 
 It's a fact.
 
@@ -139,7 +139,7 @@ Two complementary courses of actions:
 
 **Large return on investment**
 
-# Being protective about code
+### Being protective about code
 
 There can be some unhealthy competition going on.
 
@@ -165,7 +165,7 @@ tide.
 
 :::
 
-# Strong heterogeneity among team members
+### Strong heterogeneity among team members
 
 -   Experience.
 -   Skills (*e.g.* programming languages).
@@ -182,17 +182,17 @@ But in research this is a whole other level of heterogeneity.
 
 :::
 
-# Finding reviewers
+### Finding reviewers
 
 What about "lone coders"?
 
-# Bad experiences
+### Bad experiences
 
 Code review can lead both to inclusion and exclusion.
 
 Dual nature: both **technical** and **social** practice.
 
-# Bad experience 2
+### Bad experience 2
 
 Most common code review parasites are:
 
@@ -207,11 +207,11 @@ to technical debt.
 > reviewer makes your code confrom to certain principles, but not
 > opinion.
 
-# Lack of guidelines
+### Lack of guidelines
 
 Where we start?
 
-# Code review good practices
+### Code review good practices
 
 -   Most good practices from software engineering industry are
     applicable.
@@ -219,7 +219,7 @@ Where we start?
 -   The following is an account of my personal experience and
     discussions with colleagues - not evidence-based conclusions.
 
-# Short meetings
+### Short meetings
 
 3 times 30' instead of one time 90'
 
@@ -227,7 +227,7 @@ Where we start?
 -   Doesn't feel like a big commitment.
 -   Code review can be a very demanding activity.
 
-# Engage with the review
+### Engage with the review
 
 It's easy for participants to fall into "comfort mode"
 
@@ -239,7 +239,7 @@ Reviewers should **never stop questionning** and trying to understand the code
 
 Authors should **give reviewers opportunities to interject**.
 
-# Let authors be aware of their responsabilities
+### Let authors be aware of their responsabilities
 
 A code review's success partly rests on the author's shoulder.
 
@@ -253,7 +253,7 @@ A code review's success partly rests on the author's shoulder.
 Put yourself into your reviewer(s)' shoes: what would you want to be
 told if asked to review your code?
 
-# Let authors specify the feedback they are after
+### Let authors specify the feedback they are after
 
 Feedback is likely to be more targeted and impactful.
 
@@ -271,7 +271,7 @@ think of my design?*
 *I don't have any specific issue in mind, but I'm curious to see
 whether or not you find it hard to to follow the code's logic.*
 
-# Define (and enforce) a scope
+### Define (and enforce) a scope
 
 Example default scope: understandability
 
@@ -286,7 +286,7 @@ Example default scope: understandability
 
 Default scope can be overrriden at will.
 
-# Whether "it works" or not is irrelevant
+### Whether "it works" or not is irrelevant
 
 Code review is not an evaluation of a finished product.
 
@@ -297,7 +297,7 @@ The only expectation is that code is readable by reviewers:
 
 -   Formatting, dead code, comments...
 
-# Make it formal but safe
+### Make it formal but safe
 
 Code review is more effective with a clear process (formal)
 
@@ -307,7 +307,7 @@ Code review meetings *must* remain inclusives and supporting spaces.
 **It's about creating an environment where people feel confident about
 discussing their code to each other.**
 
-# Overheard in the next meeting room
+### Overheard in the next meeting room
 
 Author: *This loop I wrote looks too complicated to me.*
 
@@ -323,14 +323,14 @@ Reviewer: *Alhtough you could also do the same thing with `sed`.*
 
 Author: *I have no idea what you're talking about*
 
-# All feedback isn't helpful
+### All feedback isn't helpful
 
 At least for now.
 
 Esp. reviewers with more programming experience/enthusiasm must be
 careful not to overwhelm beginners.
 
-# Critique the code, not the programmer
+### Critique the code, not the programmer
 
 Feedback can be hard to stomach
 
@@ -340,7 +340,7 @@ Feedback can be hard to stomach
 
 *I think this name is misleading*
 
-# The art of giving feedback
+### The art of giving feedback
 
 1.  Own you opinions.
 2.  Make it about the code.
@@ -350,7 +350,7 @@ Feedback can be hard to stomach
 *I think this function's purpose would be much clearer if it was given
 a more explicit name.. perhaps `apply_bwd_trasform`?*
 
-# Define (and refine) a policy
+### Define (and refine) a policy
 
 -   Well defined process
 -   Default scope
@@ -358,7 +358,7 @@ a more explicit name.. perhaps `apply_bwd_trasform`?*
 -   Code of conduct
 -   Conflict resolution
 
-# Use a checklist
+### Use a checklist
 
 -   [ ] Poor formatting.
 -   [ ] Dead code.
@@ -374,7 +374,7 @@ a more explicit name.. perhaps `apply_bwd_trasform`?*
 -   [ ] Data clumps.
 -   ...
 
-# A culture of openess and collaboration
+### A culture of openess and collaboration
 
 -   Collective ownership of research project, teamwork
     Chris Woods' point about making research more of a team effort.
