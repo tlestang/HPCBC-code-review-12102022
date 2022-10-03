@@ -5,16 +5,31 @@ author:
 - Dominik Krzemiński
 - Valerio Maggio
 keywords: ["Code Review", "Software Sustainability Institute", "Research Software"]
+fontsize: 8pt
 ---
+
+# What is a code review?
+
+![img](img/detective.png)
+
 # Code review?
+
+Main benefits:
+-   Catching bugs
+-   Ensuring quality standard
+-   Spreading knowledge
+-   Training new developers
+
+> **Code reviews are an effective method for improving software quality. Unit testing finds approximately 25% of defects, function testing 35%, integration testing 45%, and code review 55-60%.** (McConnell, 2004)
+
+![img](img/men-talking.jpg)
+
+::: notes
 
 -   Viewed as an important practice in the software industry.
 -   Key step in contributing to most software projects (gatekeeping).
--   Many benefits
-    -   Catch bugs
-    -   Ensure quality standard
-    -   Spread knowledge
-    -   Training new developers
+
+:::
 
 # Not a peer review for code
 
@@ -29,7 +44,7 @@ keywords: ["Code Review", "Software Sustainability Institute", "Research Softwar
 
 # CODECHECK
 
-Just a mention
+![codechecks](https://raw.githubusercontent.com/codecheckers/paper/master/figs/codecheck_overview.svg)
 
 # Two contexts
 
@@ -37,19 +52,20 @@ Just a mention
 2.  Developers collaboratin on a common codebase.
     -   Code review as gatekeeping.
 
-# Why code reviews
+# Research on code reviews
 
-Modern Code Review: A Case Study at Google (Sadowski 2018)
+*Modern Code Review: A Case Study at Google* (Sadowski, 2018)
 
-Expectations, Outcomes, and Challenges of Modern Code Review:
-(Bacchelli and Bird 2013)
+*Expectations, Outcomes, and Challenges of Modern Code Review*
+(Bacchelli and Bird, 2013)
 
-Code Reviewing in the Trenches: Understanding Challenges and Best
-Practices (McLeod et al 1017)
+*Code Reviewing in the Trenches: Understanding Challenges and Best
+Practices* (McLeod et al, 2017)
 
-Code review by and for scientists
+*Code review by and for scientists* (Petre & Wilson, 2014)
 
-# Code review for software quality 1
+
+# Code review for software quality
 
 1.  Defects
 2.  Code improvements
@@ -66,7 +82,9 @@ complying to a naming scheme, identifying code smells.
 
 :::
 
-# Code review for software quality 2
+# Code review for software quality
+
+![img](img/builder.png)
 
 ::: notes
 
