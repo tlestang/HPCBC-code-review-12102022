@@ -1,0 +1,644 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="generator" content="pandoc">
+  <title>slides</title>
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+  <link rel="stylesheet" href="https://unpkg.com/reveal.js@^4/dist/reset.css">
+  <link rel="stylesheet" href="https://unpkg.com/reveal.js@^4/dist/reveal.css">
+  <style>
+    .reveal .sourceCode {  /* see #7635 */
+      overflow: visible;
+    }
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    span.underline{text-decoration: underline;}
+    div.column{display: inline-block; vertical-align: top; width: 50%;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    ul.task-list{list-style: none;}
+    .display.math{display: block; text-align: center; margin: 0.5rem auto;}
+  </style>
+  <link rel="stylesheet" href="https://unpkg.com/reveal.js@^4/dist/theme/white.css" id="theme">
+</head>
+<body>
+  <div class="reveal">
+    <div class="slides">
+
+
+<section class="slide level1">
+
+<p><a id="org517ee13"></a></p>
+</section>
+<section id="code-review" class="slide level1">
+<h1>Code review?</h1>
+<ul>
+<li>Viewed as an important practice in the software industry.</li>
+<li>Key step in contributing to most software projects
+(gatekeeping).</li>
+<li>Many benefits
+<ul>
+<li>Catch bugs</li>
+<li>Ensure quality standard</li>
+<li>Spread knowledge</li>
+<li>Training new developers</li>
+</ul></li>
+</ul>
+<p><a id="org84d7c12"></a></p>
+</section>
+<section id="not-a-peer-review-for-code" class="slide level1">
+<h1>Not a peer review for code</h1>
+<ul>
+<li>Code review <strong>throughout the research process</strong>:
+<ul>
+<li>Frequent</li>
+<li>Informal</li>
+<li>Low stakes</li>
+</ul></li>
+<li>Commonly referred as “Modern Code Review” in the SE litterature.
+Bachelli and Bird 2013</li>
+<li>Can be asynchronous (GitHub’s Pull Requests) or synchronous (in
+person chat).</li>
+</ul>
+<p><a id="orgc483b6b"></a></p>
+</section>
+<section id="codecheck" class="slide level1">
+<h1>CODECHECK</h1>
+<p>Just a mention</p>
+<p><a id="org6da022f"></a></p>
+</section>
+<section id="two-contexts" class="slide level1">
+<h1>Two contexts</h1>
+<ol type="1">
+<li>Individual developers writing their own specific software.</li>
+<li>Developers collaboratin on a common codebase.
+<ul>
+<li>Code review as gatekeeping.</li>
+</ul></li>
+</ol>
+<p><a id="orgb70a68b"></a></p>
+</section>
+<section id="why-code-reviews" class="slide level1">
+<h1>Why code reviews</h1>
+<p>Modern Code Review: A Case Study at Google (Sadowski 2018)</p>
+<p>Expectations, Outcomes, and Challenges of Modern Code Review:
+(Bacchelli and Bird 2013)</p>
+<p>Code Reviewing in the Trenches: Understanding Challenges and Best
+Practices (McLeod et al 1017)</p>
+<p>Code review by and for scientists</p>
+<p><a id="org281c6ed"></a></p>
+</section>
+<section id="code-review-for-software-quality-1" class="slide level1">
+<h1>Code review for software quality 1</h1>
+<ol type="1">
+<li>Defects</li>
+<li>Code improvements</li>
+</ol>
+<aside id="org521551a" class="notes">
+<p>
+If you ask Microsoft developers about why they are doing code reviews,
+you’ll find that the main motivation is making the code better. This
+means identifying defects and improving the code.
+</p>
+<p>
+Code improvements are changes that do not affect the functionalities but
+make the code more readable or maintainable. You can think of complying
+to a naming scheme, identifying code smells.
+</p>
+</aside>
+<p><a id="org8e2560e"></a></p>
+</section>
+<section id="code-review-for-software-quality-2" class="slide level1">
+<h1>Code review for software quality 2</h1>
+<aside id="org6343eba" class="notes">
+<p>
+In practice, defects aren’t the first thing that code review really help
+with. It can help, but maybe testing is a better investement in order to
+prevent bugs.
+</p>
+<p>
+But code review is clearly effective for improving code.
+</p>
+</aside>
+<p><a id="org3d28e03"></a></p>
+</section>
+<section id="understandability-matters" class="slide level1">
+<h1>Understandability matters</h1>
+<figure>
+<img data-src="img/readable-code.jpg" alt="img" />
+<figcaption aria-hidden="true">img</figcaption>
+</figure>
+<p>Oftentimes source code is the only available docs..</p>
+<aside id="org1113e61" class="notes">
+<p>
+Code review is a good assessment of understandability and this makes it
+very attractive for research software. If you think of a research group
+in which researchers write their own bespoke programs for their specific
+data manipulation or computational experiement, these will not be
+documented.
+</p>
+<p>
+Understandability becomes a prime quality for research software.
+</p>
+</aside>
+<p><a id="orgea47718"></a></p>
+</section>
+<section id="knowledge-transfer" class="slide level1">
+<h1>Knowledge transfer</h1>
+<p>Code review is a peer learning activity.</p>
+<ul>
+<li><p>Spread of good practices.</p></li>
+<li><p>Homogeneisation of styles and practicess across group.</p>
+<p>filepath = “/my/own/specific/path/” + “data.csv”</p>
+<p>from pathlib import Path # … filepath = datadir_path /
+Path(datafile)</p></li>
+</ul>
+<p><a id="org4b02fd6"></a></p>
+</section>
+<section id="better-team-awareness" class="slide level1">
+<h1>Better team awareness</h1>
+<p>Even if not working on <em>exactly</em> the same project, regular
+code reviews enable awareness of what others are doing.</p>
+<ul>
+<li>Continuous knowledge exchange</li>
+<li>Enhanced collaboration</li>
+<li>Longer term resilience of project(s) (Bus factor!)</li>
+</ul>
+<p><a id="org6376f99"></a></p>
+</section>
+<section id="code-review-is-challenging" class="slide level1">
+<h1>Code review is challenging</h1>
+<p>A lot of content available, but what about <strong>research
+software</strong>?</p>
+<p><a id="org63f1c92"></a></p>
+</section>
+<section id="code-review-is-time-and-energy" class="slide level1">
+<h1>Code review is time and energy</h1>
+<p>It’s a fact.</p>
+<p>Two complementary courses of actions:</p>
+<ul>
+<li>Acknowledge code review as a worthy investement:
+<ul>
+<li>“middle-term” benefits for individuals.</li>
+<li>Short and long term benefits for collectives.</li>
+</ul></li>
+<li>Regularly reflect process and follow good practices.</li>
+</ul>
+<p><strong>Large return on investment</strong></p>
+<p><a id="org461537d"></a></p>
+</section>
+<section id="being-protective-about-code" class="slide level1">
+<h1>Being protective about code</h1>
+<p>There can be some unhealthy competition going on.</p>
+<p>A large number of researchers feel shy about their coding
+practices:</p>
+<ul>
+<li>Lack of training.</li>
+<li>Other priorities, often systemic (e.g. funding).</li>
+<li>Why would I share my code if nobody else does?</li>
+</ul>
+<p>Code review can turn the tide by putting software (back?) at the
+heart of scientific process.</p>
+<aside id="org10b8362" class="notes">
+<p>
+One prerequisite of code reivew is being okay with somebody looking your
+code. Not only looking but judging it against some quality standards.
+</p>
+<p>
+I’ve worked with researchers in various and often feel ashamed of their
+coding practice. Several factors: lack of training, code is an
+afterthought, not used to share code. Code review can help <b>turn the
+tide</b>.
+</p>
+</aside>
+<p><a id="orgd0c4ac3"></a></p>
+</section>
+<section id="strong-heterogeneity-among-team-members"
+class="slide level1">
+<h1>Strong heterogeneity among team members</h1>
+<ul>
+<li>Experience.</li>
+<li>Skills (<em>e.g.</em> programming languages).</li>
+<li>Interest &amp; motivation.</li>
+</ul>
+<aside id="org5a600d1" class="notes">
+<p>
+Code review litterature reports on the effect of heterogeneity among
+participants who can be very junior developers up to employees with more
+than 10 years experience int he software industry or even the same
+company.
+</p>
+<p>
+But in research this is a whole other level of heterogeneity.
+</p>
+</aside>
+<p><a id="orgc167fd1"></a></p>
+</section>
+<section id="finding-reviewers" class="slide level1">
+<h1>Finding reviewers</h1>
+<p>What about “lone coders”?</p>
+<p><a id="orgc6226d9"></a></p>
+</section>
+<section id="bad-experiences" class="slide level1">
+<h1>Bad experiences</h1>
+<p>Code review can lead both to inclusion and exclusion.</p>
+<p>Dual nature: both <strong>technical</strong> and
+<strong>social</strong> practice.</p>
+<p><a id="org0347605"></a></p>
+</section>
+<section id="bad-experience-2" class="slide level1">
+<h1>Bad experience 2</h1>
+<p>Most common code review parasites are:</p>
+<ul>
+<li>Irrelevant feedback.</li>
+<li>Petty arguments decoupled from overall scientific goal.</li>
+<li>Power struggles.</li>
+</ul>
+<p>These must be and active effort to keep these under control. Similar
+to technical debt.</p>
+<blockquote>
+<p>A bad reviewer tries to force their preference on you. A good code
+reviewer makes your code confrom to certain principles, but not
+opinion.</p>
+</blockquote>
+<p><a id="org189b521"></a></p>
+</section>
+<section id="lack-of-guidelines" class="slide level1">
+<h1>Lack of guidelines</h1>
+<p>Where do <del>I</del> <strong>we</strong> start?</p>
+<p><a id="orgefd37cb"></a></p>
+</section>
+<section id="code-review-good-practices" class="slide level1">
+<h1>Code review good practices</h1>
+<ul>
+<li>Most good practices from software engineering industry are
+applicable.</li>
+<li>Some of them for slightly different reasons</li>
+<li>The following is an account of my personal experience and
+discussions with colleagues - not evidence-based conclusions.</li>
+</ul>
+<p><a id="org61aaab5"></a></p>
+</section>
+<section id="short-meetings" class="slide level1">
+<h1>Short meetings</h1>
+<p>3 times 30’ instead of one time 90’</p>
+<ul>
+<li>Fit snuggly in the diary.</li>
+<li>Doesn’t feel like a big commitment.</li>
+<li>Code review can be a very demanding activity.</li>
+</ul>
+<p><a id="org0319396"></a></p>
+</section>
+<section id="engage-with-the-review" class="slide level1">
+<h1>Engage with the review</h1>
+<p>It’s easy for participants to fall into “comfort mode”</p>
+<ul>
+<li>Author describes goes through code as if logic and implementation is
+obvious.</li>
+<li>Reviewers assume author “know what they are doing”.</li>
+</ul>
+<p>Reviewers should <strong>never stop questionning</strong> and trying
+to understand the code</p>
+<p>Authors should <strong>give reviewers opportunities to
+interject</strong>.</p>
+<p><a id="org56b8767"></a></p>
+</section>
+<section id="let-authors-be-aware-of-their-responsabilities"
+class="slide level1">
+<h1>Let authors be aware of their responsabilities</h1>
+<p>A code review’s success partly rests on the author’s shoulder.</p>
+<ul>
+<li>Choose a small piece of code.</li>
+<li>Provide a description of the purpose and structure of the code.</li>
+<li>Think ahead what reviewers will and will not be familiar with
+<ul>
+<li>Specific libraries</li>
+<li>Specific domain knowledge</li>
+</ul></li>
+<li>Ensure minimum quality standard (<em>e.g.</em> style, naming)</li>
+</ul>
+<p>Put yourself into your reviewer(s)’ shoes: what would you want to be
+told if asked to review your code?</p>
+<p><a id="orgaac4db3"></a></p>
+</section>
+<section id="let-authors-specify-the-feedback-they-are-after"
+class="slide level1">
+<h1>Let authors specify the feedback they are after</h1>
+<p>Feedback is likely to be more targeted and impactful.</p>
+<p><em>I’m not happy with this loop</em></p>
+<pre><code>for i in `seq 1 $NUMOFFIG`
+do
+    FIG=$(ls $IMDIR | head -n $i | tail -n 1)
+    echo &quot;    ${placeholderpath}/${FIG}&quot; &gt;&gt; $FILE
+done</code></pre>
+<p><em>I’m having to define a lot of classes that don’t do much, what do
+you think of my design?</em></p>
+<p><em>I don’t have any specific issue in mind, but I’m curious to see
+whether or not you find it hard to to follow the code’s logic.</em></p>
+<p><a id="org5e5d24f"></a></p>
+</section>
+<section id="define-and-enforce-a-scope" class="slide level1">
+<h1>Define – and enforce – a scope</h1>
+<p>Example default scope: understandability</p>
+<ul>
+<li>Poor formatting.</li>
+<li>Obscure variable names.</li>
+<li>Complex conditionals.</li>
+<li>Long functions.</li>
+<li>Long parameter lists.</li>
+<li><del>
+Design red flags
+</del>
+.</li>
+<li><del>
+Performance sinks
+</del>
+.</li>
+<li><del>
+Security concerns
+</del>
+.</li>
+</ul>
+<p>Default scope can be overrriden at will.</p>
+<p><a id="orge49fe14"></a></p>
+</section>
+<section id="whether-it-works-or-not-is-irrelevant"
+class="slide level1">
+<h1>Whether “it works” or not is irrelevant</h1>
+<p>Code review is not an evaluation of a finished product.</p>
+<p>It is more rewarding to look at code that is WIP or causing
+difficulties.</p>
+<p>The only expectation is that code is readable by reviewers:</p>
+<ul>
+<li>Formatting, dead code, comments…</li>
+</ul>
+<p><a id="orga9c642a"></a></p>
+</section>
+<section id="make-it-formal-but-safe" class="slide level1">
+<h1>Make it formal but safe</h1>
+<p>Code review is more effective with a clear process (formal)</p>
+<p><em>At the same time,</em> Code review meetings <em>must</em> remain
+inclusives and supporting spaces.</p>
+<p><strong>It’s about creating an environment where people feel
+confident about discussing their code to each other.</strong></p>
+<p><a id="orgd690b38"></a></p>
+</section>
+<section id="overheard-in-the-next-meeting-room" class="slide level1">
+<h1>Overheard in the next meeting room</h1>
+<p>Author: <em>This loop I wrote looks too complicated to me.</em></p>
+<p>Reviewer: <em>Hmmm yes. You could just use a pipe and
+<code>xargs</code>.</em></p>
+<p>Author: <em>What’s <code>xargs</code>?</em></p>
+<p>Reviewer: <em>It’s basically mapping a command over a set of
+inputs.</em></p>
+<p>Author: <em>…</em></p>
+<p>Reviewer: <em>Alhtough you could also do the same thing with
+<code>sed</code>.</em></p>
+<p>Author: <em>I have no idea what you’re talking about</em></p>
+<p><a id="org8b3d4db"></a></p>
+</section>
+<section id="all-feedback-isnt-helpful" class="slide level1">
+<h1>All feedback isn’t helpful</h1>
+<p>At least for now.</p>
+<p>Esp. reviewers with more programming experience/enthusiasm must be
+careful not to overwhelm beginners.</p>
+<p><a id="orgb16f916"></a></p>
+</section>
+<section id="critique-the-code-not-the-programmer" class="slide level1">
+<h1>Critique the code, not the programmer</h1>
+<p>Feedback can be hard to stomach</p>
+<p><em>You clearly made little effort in naming things…</em></p>
+<p><em>You should name this differently</em></p>
+<p><em>I think this name is misleading</em></p>
+<p><a id="orgcfb18d2"></a></p>
+</section>
+<section id="the-art-of-giving-feedback" class="slide level1">
+<h1>The art of giving feedback</h1>
+<ol type="1">
+<li>Own you opinions.</li>
+<li>Make it about the code.</li>
+<li>Be specific.</li>
+<li>Suggest an alternative.</li>
+</ol>
+<p><em>I think this function’s purpose would be much clearer if it was
+given a more explicit name.. perhaps
+<code>apply_bwd_trasform</code>?</em></p>
+<p><a id="org92ba3d4"></a></p>
+</section>
+<section id="define-and-refine-a-policy" class="slide level1">
+<h1>Define (and refine) a policy</h1>
+<ul>
+<li>Well defined process</li>
+<li>Default scope</li>
+<li>Moderator(s)</li>
+<li>Code of conduct</li>
+<li>Conflict resolution</li>
+</ul>
+<p><a id="orga31496f"></a></p>
+</section>
+<section id="use-a-checklist" class="slide level1">
+<h1>Use a checklist</h1>
+<ul>
+<li><input type="checkbox" disabled="" />
+Poor formatting.</li>
+<li><input type="checkbox" disabled="" />
+Dead code.</li>
+<li><input type="checkbox" disabled="" />
+Missing documentation.</li>
+<li><input type="checkbox" disabled="" />
+Obscure names.</li>
+<li><input type="checkbox" disabled="" />
+Complex conditionals.</li>
+<li><input type="checkbox" disabled="" />
+Obscure one-liners.</li>
+<li><input type="checkbox" disabled="" />
+Duplicated code.</li>
+<li><input type="checkbox" disabled="" />
+Long procedures.</li>
+<li><input type="checkbox" disabled="" />
+Long parameter lists.</li>
+<li><input type="checkbox" disabled="" />
+Global state.</li>
+<li><input type="checkbox" disabled="" />
+Abuse of primitive types.</li>
+<li><input type="checkbox" disabled="" />
+Data clumps.</li>
+<li>…</li>
+</ul>
+<p><a id="orgc322dea"></a></p>
+</section>
+<section id="a-culture-of-openess-and-collaboration"
+class="slide level1">
+<h1>A culture of openess and collaboration</h1>
+<ul>
+<li>Collective ownership of research project, teamwork Chris Woods’
+point about making research more of a team effort.</li>
+</ul>
+</section>
+    </div>
+  </div>
+
+  <script src="https://unpkg.com/reveal.js@^4/dist/reveal.js"></script>
+
+  <!-- reveal.js plugins -->
+  <script src="https://unpkg.com/reveal.js@^4/plugin/notes/notes.js"></script>
+  <script src="https://unpkg.com/reveal.js@^4/plugin/search/search.js"></script>
+  <script src="https://unpkg.com/reveal.js@^4/plugin/zoom/zoom.js"></script>
+
+  <script>
+
+      // Full list of configuration options available at:
+      // https://revealjs.com/config/
+      Reveal.initialize({
+        // Display controls in the bottom right corner
+        controls: true,
+
+        // Help the user learn the controls by providing hints, for example by
+        // bouncing the down arrow when they first encounter a vertical slide
+        controlsTutorial: true,
+
+        // Determines where controls appear, "edges" or "bottom-right"
+        controlsLayout: 'bottom-right',
+
+        // Visibility rule for backwards navigation arrows; "faded", "hidden"
+        // or "visible"
+        controlsBackArrows: 'faded',
+
+        // Display a presentation progress bar
+        progress: true,
+
+        // Display the page number of the current slide
+        slideNumber: true,
+
+        // 'all', 'print', or 'speaker'
+        showSlideNumber: 'all',
+
+        // Add the current slide number to the URL hash so that reloading the
+        // page/copying the URL will return you to the same slide
+        hash: true,
+
+        // Start with 1 for the hash rather than 0
+        hashOneBasedIndex: false,
+
+        // Flags if we should monitor the hash and change slides accordingly
+        respondToHashChanges: true,
+
+        // Push each slide change to the browser history
+        history: false,
+
+        // Enable keyboard shortcuts for navigation
+        keyboard: true,
+
+        // Enable the slide overview mode
+        overview: true,
+
+        // Disables the default reveal.js slide layout (scaling and centering)
+        // so that you can use custom CSS layout
+        disableLayout: false,
+
+        // Vertical centering of slides
+        center: true,
+
+        // Enables touch navigation on devices with touch input
+        touch: true,
+
+        // Loop the presentation
+        loop: false,
+
+        // Change the presentation direction to be RTL
+        rtl: false,
+
+        // see https://revealjs.com/vertical-slides/#navigation-mode
+        navigationMode: 'default',
+
+        // Randomizes the order of slides each time the presentation loads
+        shuffle: false,
+
+        // Turns fragments on and off globally
+        fragments: true,
+
+        // Flags whether to include the current fragment in the URL,
+        // so that reloading brings you to the same fragment position
+        fragmentInURL: true,
+
+        // Flags if the presentation is running in an embedded mode,
+        // i.e. contained within a limited portion of the screen
+        embedded: false,
+
+        // Flags if we should show a help overlay when the questionmark
+        // key is pressed
+        help: true,
+
+        // Flags if it should be possible to pause the presentation (blackout)
+        pause: true,
+
+        // Flags if speaker notes should be visible to all viewers
+        showNotes: false,
+
+        // Global override for autoplaying embedded media (null/true/false)
+        autoPlayMedia: null,
+
+        // Global override for preloading lazy-loaded iframes (null/true/false)
+        preloadIframes: null,
+
+        // Number of milliseconds between automatically proceeding to the
+        // next slide, disabled when set to 0, this value can be overwritten
+        // by using a data-autoslide attribute on your slides
+        autoSlide: 0,
+
+        // Stop auto-sliding after user input
+        autoSlideStoppable: true,
+
+        // Use this method for navigation when auto-sliding
+        autoSlideMethod: null,
+
+        // Specify the average time in seconds that you think you will spend
+        // presenting each slide. This is used to show a pacing timer in the
+        // speaker view
+        defaultTiming: null,
+
+        // Enable slide navigation via mouse wheel
+        mouseWheel: false,
+
+        // The display mode that will be used to show slides
+        display: 'block',
+
+        // Hide cursor if inactive
+        hideInactiveCursor: true,
+
+        // Time before the cursor is hidden (in ms)
+        hideCursorTime: 5000,
+
+        // Opens links in an iframe preview overlay
+        previewLinks: false,
+
+        // Transition style (none/fade/slide/convex/concave/zoom)
+        transition: 'none',
+
+        // Transition speed (default/fast/slow)
+        transitionSpeed: 'default',
+
+        // Transition style for full page slide backgrounds
+        // (none/fade/slide/convex/concave/zoom)
+        backgroundTransition: 'none',
+
+        // Number of slides away from the current that are visible
+        viewDistance: 3,
+
+        // Number of slides away from the current that are visible on mobile
+        // devices. It is advisable to set this to a lower number than
+        // viewDistance in order to save resources.
+        mobileViewDistance: 2,
+
+        // reveal.js plugins
+        plugins: [
+          RevealNotes,
+          RevealSearch,
+          RevealZoom
+        ]
+      });
+    </script>
+    </body>
+</html>
