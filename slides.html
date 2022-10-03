@@ -3,7 +3,12 @@
 <head>
   <meta charset="utf-8">
   <meta name="generator" content="pandoc">
-  <title>slides</title>
+  <meta name="author" content="Thibault Lestang">
+  <meta name="author" content="Dominik Krzemiński">
+  <meta name="author" content="Valerio Maggio">
+  <meta name="keywords" content="Code Review, Software Sustainability
+Institute, Research Software">
+  <title>Investing in code reviews for better research software</title>
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
@@ -27,11 +32,14 @@
   <div class="reveal">
     <div class="slides">
 
-
-<section class="slide level1">
-
-<p><a id="org517ee13"></a></p>
+<section id="title-slide">
+  <h1 class="title">Investing in code reviews for better research
+software</h1>
+  <p class="author">Thibault Lestang</p>
+  <p class="author">Dominik Krzemiński</p>
+  <p class="author">Valerio Maggio</p>
 </section>
+
 <section id="code-review" class="slide level1">
 <h1>Code review?</h1>
 <ul>
@@ -46,7 +54,6 @@
 <li>Training new developers</li>
 </ul></li>
 </ul>
-<p><a id="org84d7c12"></a></p>
 </section>
 <section id="not-a-peer-review-for-code" class="slide level1">
 <h1>Not a peer review for code</h1>
@@ -62,12 +69,10 @@ Bachelli and Bird 2013</li>
 <li>Can be asynchronous (GitHub’s Pull Requests) or synchronous (in
 person chat).</li>
 </ul>
-<p><a id="orgc483b6b"></a></p>
 </section>
 <section id="codecheck" class="slide level1">
 <h1>CODECHECK</h1>
 <p>Just a mention</p>
-<p><a id="org6da022f"></a></p>
 </section>
 <section id="two-contexts" class="slide level1">
 <h1>Two contexts</h1>
@@ -78,7 +83,6 @@ person chat).</li>
 <li>Code review as gatekeeping.</li>
 </ul></li>
 </ol>
-<p><a id="orgb70a68b"></a></p>
 </section>
 <section id="why-code-reviews" class="slide level1">
 <h1>Why code reviews</h1>
@@ -88,7 +92,6 @@ person chat).</li>
 <p>Code Reviewing in the Trenches: Understanding Challenges and Best
 Practices (McLeod et al 1017)</p>
 <p>Code review by and for scientists</p>
-<p><a id="org281c6ed"></a></p>
 </section>
 <section id="code-review-for-software-quality-1" class="slide level1">
 <h1>Code review for software quality 1</h1>
@@ -96,33 +99,23 @@ Practices (McLeod et al 1017)</p>
 <li>Defects</li>
 <li>Code improvements</li>
 </ol>
-<aside id="org521551a" class="notes">
-<p>
-If you ask Microsoft developers about why they are doing code reviews,
-you’ll find that the main motivation is making the code better. This
-means identifying defects and improving the code.
-</p>
-<p>
-Code improvements are changes that do not affect the functionalities but
-make the code more readable or maintainable. You can think of complying
-to a naming scheme, identifying code smells.
-</p>
+<aside class="notes">
+<p>If you ask Microsoft developers about why they are doing code
+reviews, you’ll find that the main motivation is making the code better.
+This means identifying defects and improving the code.</p>
+<p>Code improvements are changes that do not affect the functionalities
+but make the code more readable or maintainable. You can think of
+complying to a naming scheme, identifying code smells.</p>
 </aside>
-<p><a id="org8e2560e"></a></p>
 </section>
 <section id="code-review-for-software-quality-2" class="slide level1">
 <h1>Code review for software quality 2</h1>
-<aside id="org6343eba" class="notes">
-<p>
-In practice, defects aren’t the first thing that code review really help
-with. It can help, but maybe testing is a better investement in order to
-prevent bugs.
-</p>
-<p>
-But code review is clearly effective for improving code.
-</p>
+<aside class="notes">
+<p>In practice, defects aren’t the first thing that code review really
+help with. It can help, but maybe testing is a better investement in
+order to prevent bugs.</p>
+<p>But code review is clearly effective for improving code.</p>
 </aside>
-<p><a id="org3d28e03"></a></p>
 </section>
 <section id="understandability-matters" class="slide level1">
 <h1>Understandability matters</h1>
@@ -131,19 +124,14 @@ But code review is clearly effective for improving code.
 <figcaption aria-hidden="true">img</figcaption>
 </figure>
 <p>Oftentimes source code is the only available docs..</p>
-<aside id="org1113e61" class="notes">
-<p>
-Code review is a good assessment of understandability and this makes it
-very attractive for research software. If you think of a research group
-in which researchers write their own bespoke programs for their specific
-data manipulation or computational experiement, these will not be
-documented.
-</p>
-<p>
-Understandability becomes a prime quality for research software.
-</p>
+<aside class="notes">
+<p>Code review is a good assessment of understandability and this makes
+it very attractive for research software. If you think of a research
+group in which researchers write their own bespoke programs for their
+specific data manipulation or computational experiement, these will not
+be documented.</p>
+<p>Understandability becomes a prime quality for research software.</p>
 </aside>
-<p><a id="orgea47718"></a></p>
 </section>
 <section id="knowledge-transfer" class="slide level1">
 <h1>Knowledge transfer</h1>
@@ -155,7 +143,6 @@ Understandability becomes a prime quality for research software.
 <p>from pathlib import Path # … filepath = datadir_path /
 Path(datafile)</p></li>
 </ul>
-<p><a id="org4b02fd6"></a></p>
 </section>
 <section id="better-team-awareness" class="slide level1">
 <h1>Better team awareness</h1>
@@ -166,13 +153,11 @@ code reviews enable awareness of what others are doing.</p>
 <li>Enhanced collaboration</li>
 <li>Longer term resilience of project(s) (Bus factor!)</li>
 </ul>
-<p><a id="org6376f99"></a></p>
 </section>
 <section id="code-review-is-challenging" class="slide level1">
 <h1>Code review is challenging</h1>
 <p>A lot of content available, but what about <strong>research
 software</strong>?</p>
-<p><a id="org63f1c92"></a></p>
 </section>
 <section id="code-review-is-time-and-energy" class="slide level1">
 <h1>Code review is time and energy</h1>
@@ -186,8 +171,9 @@ software</strong>?</p>
 </ul></li>
 <li>Regularly reflect process and follow good practices.</li>
 </ul>
+<div class="fragment">
 <p><strong>Large return on investment</strong></p>
-<p><a id="org461537d"></a></p>
+</div>
 </section>
 <section id="being-protective-about-code" class="slide level1">
 <h1>Being protective about code</h1>
@@ -201,19 +187,15 @@ practices:</p>
 </ul>
 <p>Code review can turn the tide by putting software (back?) at the
 heart of scientific process.</p>
-<aside id="org10b8362" class="notes">
-<p>
-One prerequisite of code reivew is being okay with somebody looking your
-code. Not only looking but judging it against some quality standards.
-</p>
-<p>
-I’ve worked with researchers in various and often feel ashamed of their
-coding practice. Several factors: lack of training, code is an
-afterthought, not used to share code. Code review can help <b>turn the
-tide</b>.
-</p>
+<aside class="notes">
+<p>One prerequisite of code reivew is being okay with somebody looking
+your code. Not only looking but judging it against some quality
+standards.</p>
+<p>I’ve worked with researchers in various and often feel ashamed of
+their coding practice. Several factors: lack of training, code is an
+afterthought, not used to share code. Code review can help turn the
+tide.</p>
 </aside>
-<p><a id="orgd0c4ac3"></a></p>
 </section>
 <section id="strong-heterogeneity-among-team-members"
 class="slide level1">
@@ -223,30 +205,23 @@ class="slide level1">
 <li>Skills (<em>e.g.</em> programming languages).</li>
 <li>Interest &amp; motivation.</li>
 </ul>
-<aside id="org5a600d1" class="notes">
-<p>
-Code review litterature reports on the effect of heterogeneity among
+<aside class="notes">
+<p>Code review litterature reports on the effect of heterogeneity among
 participants who can be very junior developers up to employees with more
 than 10 years experience int he software industry or even the same
-company.
-</p>
-<p>
-But in research this is a whole other level of heterogeneity.
-</p>
+company.</p>
+<p>But in research this is a whole other level of heterogeneity.</p>
 </aside>
-<p><a id="orgc167fd1"></a></p>
 </section>
 <section id="finding-reviewers" class="slide level1">
 <h1>Finding reviewers</h1>
 <p>What about “lone coders”?</p>
-<p><a id="orgc6226d9"></a></p>
 </section>
 <section id="bad-experiences" class="slide level1">
 <h1>Bad experiences</h1>
 <p>Code review can lead both to inclusion and exclusion.</p>
 <p>Dual nature: both <strong>technical</strong> and
 <strong>social</strong> practice.</p>
-<p><a id="org0347605"></a></p>
 </section>
 <section id="bad-experience-2" class="slide level1">
 <h1>Bad experience 2</h1>
@@ -263,12 +238,10 @@ to technical debt.</p>
 reviewer makes your code confrom to certain principles, but not
 opinion.</p>
 </blockquote>
-<p><a id="org189b521"></a></p>
 </section>
 <section id="lack-of-guidelines" class="slide level1">
 <h1>Lack of guidelines</h1>
-<p>Where do <del>I</del> <strong>we</strong> start?</p>
-<p><a id="orgefd37cb"></a></p>
+<p>Where we start?</p>
 </section>
 <section id="code-review-good-practices" class="slide level1">
 <h1>Code review good practices</h1>
@@ -279,7 +252,6 @@ applicable.</li>
 <li>The following is an account of my personal experience and
 discussions with colleagues - not evidence-based conclusions.</li>
 </ul>
-<p><a id="org61aaab5"></a></p>
 </section>
 <section id="short-meetings" class="slide level1">
 <h1>Short meetings</h1>
@@ -289,7 +261,6 @@ discussions with colleagues - not evidence-based conclusions.</li>
 <li>Doesn’t feel like a big commitment.</li>
 <li>Code review can be a very demanding activity.</li>
 </ul>
-<p><a id="org0319396"></a></p>
 </section>
 <section id="engage-with-the-review" class="slide level1">
 <h1>Engage with the review</h1>
@@ -303,7 +274,6 @@ obvious.</li>
 to understand the code</p>
 <p>Authors should <strong>give reviewers opportunities to
 interject</strong>.</p>
-<p><a id="org56b8767"></a></p>
 </section>
 <section id="let-authors-be-aware-of-their-responsabilities"
 class="slide level1">
@@ -321,7 +291,6 @@ class="slide level1">
 </ul>
 <p>Put yourself into your reviewer(s)’ shoes: what would you want to be
 told if asked to review your code?</p>
-<p><a id="orgaac4db3"></a></p>
 </section>
 <section id="let-authors-specify-the-feedback-they-are-after"
 class="slide level1">
@@ -337,10 +306,9 @@ done</code></pre>
 you think of my design?</em></p>
 <p><em>I don’t have any specific issue in mind, but I’m curious to see
 whether or not you find it hard to to follow the code’s logic.</em></p>
-<p><a id="org5e5d24f"></a></p>
 </section>
 <section id="define-and-enforce-a-scope" class="slide level1">
-<h1>Define – and enforce – a scope</h1>
+<h1>Define (and enforce) a scope</h1>
 <p>Example default scope: understandability</p>
 <ul>
 <li>Poor formatting.</li>
@@ -348,21 +316,11 @@ whether or not you find it hard to to follow the code’s logic.</em></p>
 <li>Complex conditionals.</li>
 <li>Long functions.</li>
 <li>Long parameter lists.</li>
-<li><del>
-Design red flags
-</del>
-.</li>
-<li><del>
-Performance sinks
-</del>
-.</li>
-<li><del>
-Security concerns
-</del>
-.</li>
+<li><del>Design red flags</del>.</li>
+<li><del>Performance sinks</del>.</li>
+<li><del>Security concerns</del>.</li>
 </ul>
 <p>Default scope can be overrriden at will.</p>
-<p><a id="orge49fe14"></a></p>
 </section>
 <section id="whether-it-works-or-not-is-irrelevant"
 class="slide level1">
@@ -374,7 +332,6 @@ difficulties.</p>
 <ul>
 <li>Formatting, dead code, comments…</li>
 </ul>
-<p><a id="orga9c642a"></a></p>
 </section>
 <section id="make-it-formal-but-safe" class="slide level1">
 <h1>Make it formal but safe</h1>
@@ -383,7 +340,6 @@ difficulties.</p>
 inclusives and supporting spaces.</p>
 <p><strong>It’s about creating an environment where people feel
 confident about discussing their code to each other.</strong></p>
-<p><a id="orgd690b38"></a></p>
 </section>
 <section id="overheard-in-the-next-meeting-room" class="slide level1">
 <h1>Overheard in the next meeting room</h1>
@@ -397,14 +353,12 @@ inputs.</em></p>
 <p>Reviewer: <em>Alhtough you could also do the same thing with
 <code>sed</code>.</em></p>
 <p>Author: <em>I have no idea what you’re talking about</em></p>
-<p><a id="org8b3d4db"></a></p>
 </section>
 <section id="all-feedback-isnt-helpful" class="slide level1">
 <h1>All feedback isn’t helpful</h1>
 <p>At least for now.</p>
 <p>Esp. reviewers with more programming experience/enthusiasm must be
 careful not to overwhelm beginners.</p>
-<p><a id="orgb16f916"></a></p>
 </section>
 <section id="critique-the-code-not-the-programmer" class="slide level1">
 <h1>Critique the code, not the programmer</h1>
@@ -412,7 +366,6 @@ careful not to overwhelm beginners.</p>
 <p><em>You clearly made little effort in naming things…</em></p>
 <p><em>You should name this differently</em></p>
 <p><em>I think this name is misleading</em></p>
-<p><a id="orgcfb18d2"></a></p>
 </section>
 <section id="the-art-of-giving-feedback" class="slide level1">
 <h1>The art of giving feedback</h1>
@@ -425,7 +378,6 @@ careful not to overwhelm beginners.</p>
 <p><em>I think this function’s purpose would be much clearer if it was
 given a more explicit name.. perhaps
 <code>apply_bwd_trasform</code>?</em></p>
-<p><a id="org92ba3d4"></a></p>
 </section>
 <section id="define-and-refine-a-policy" class="slide level1">
 <h1>Define (and refine) a policy</h1>
@@ -436,7 +388,6 @@ given a more explicit name.. perhaps
 <li>Code of conduct</li>
 <li>Conflict resolution</li>
 </ul>
-<p><a id="orga31496f"></a></p>
 </section>
 <section id="use-a-checklist" class="slide level1">
 <h1>Use a checklist</h1>
@@ -467,7 +418,6 @@ Abuse of primitive types.</li>
 Data clumps.</li>
 <li>…</li>
 </ul>
-<p><a id="orgc322dea"></a></p>
 </section>
 <section id="a-culture-of-openess-and-collaboration"
 class="slide level1">
