@@ -1,0 +1,37 @@
+name: Generate and deploy slides
+
+on:
+  push:
+    branches:
+      - main
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-20.04
+    steps:
+    - uses: actions/checkout@v2
+      with:
+        submodules: true
+        fetch-depth: 0
+
+    - uses: r-lib/actions/setup-pandoc@v1
+      with:
+        pandoc-version: '2.17.1'
+
+    - name: Generate the slides
+      run: |
+        mkdir build && cd build/
+        cmake ../slides
+        make install
+
+    - uses: actions/setup-python@v3
+      with:
+        python-version: '3.10'
+
+    - name: install ghp-import
+      run: python -m pip install ghp-import
+
+    - name: Deploy slides to gh-pages
+      run: |
+        git config user.name 'github-action'
+        git config user.email 'github-action'
+        ghp-import -m 'Update slides' --push --branch gh-pages build/generated
