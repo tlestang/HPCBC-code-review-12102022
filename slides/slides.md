@@ -68,6 +68,8 @@ complying to a naming scheme, identifying code smells.
 
 # Code review for software quality 2
 
+![img](img/defects-improvement-bachelli-bird2013.png)
+
 ::: notes
 
 In practice, defects aren't the first thing that code review really
