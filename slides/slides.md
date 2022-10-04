@@ -5,12 +5,13 @@ author:
 - Dominik Krzemiński
 - Valerio Maggio
 keywords: ["Code Review", "Software Sustainability Institute", "Research Software"]
-fontsize: 8pt
 ---
 
-# What is a code review?
+### What is a code review?
 
 ![img](img/detective.png)
+
+### Code review?
 
 Main benefits:
 -   Catching bugs
@@ -42,7 +43,7 @@ Main benefits:
 
 ### CODECHECK
 
-![codechecks](https://raw.githubusercontent.com/codecheckers/paper/master/figs/codecheck_overview.svg)
+![Code checking pipeline](https://raw.githubusercontent.com/codecheckers/paper/master/figs/codecheck_overview.svg)
 
 ### Two contexts
 
@@ -50,7 +51,7 @@ Main benefits:
 2.  Developers collaboratin on a common codebase.
     -   Code review as gatekeeping.
 
-# Research on code reviews
+### Research on code reviews
 
 *Modern Code Review: A Case Study at Google* (Sadowski, 2018)
 
@@ -63,7 +64,7 @@ Practices* (McLeod et al, 2017)
 *Code review by and for scientists* (Petre & Wilson, 2014)
 
 
-# Code review for software quality
+### Code review for software quality
 
 1.  Defects
 2.  Code improvements
@@ -80,7 +81,7 @@ complying to a naming scheme, identifying code smells.
 
 :::
 
-# Code review for software quality
+### Code review for software quality
 
 ![img](img/builder.png)
 
