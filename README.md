@@ -31,7 +31,7 @@ The slide show is written in markdown, to be turned into a HTML slideshow
 Start by cloning this repository
 
 ```
-git clone git@github.com:ResearchCodeReviewCommunity/CW2022-miniworkshop.git
+git clone git@github.com:tlestang/HPCBC-code-review-12102022.git
 ```
 
 The slideshow is contained in directory `slides`:
