@@ -69,6 +69,8 @@ Practices* (McLeod et al, 2017)
 1.  Defects
 2.  Code improvements
 
+![](img/builder.png)
+
 ::: notes
 
 If you ask Microsoft developers about why they are doing code reviews,
@@ -83,9 +85,7 @@ complying to a naming scheme, identifying code smells.
 
 ### Code review for software quality
 
-![img](img/builder.png)
-
-![img](img/defects-improvement-bachelli-bird2013.png)
+![(Bachelli & Bird, 13)](img/defects-improvement-bachelli-bird2013.png)
 
 ::: notes
 
