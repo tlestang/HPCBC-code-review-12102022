@@ -13,11 +13,7 @@ keywords: ["Code Review", "Software Sustainability Institute", "Research Softwar
 
 ### Code review?
 
-Main benefits:
--   Catching bugs
--   Ensuring quality standard
--   Spreading knowledge
--   Training new developers
+Main benefits: (1) catching bugs (2) Ensuring quality standard (3) Spreading knowledge (4) Training new developers
 
 > **Code reviews are an effective method for improving software quality. Unit testing finds approximately 25% of defects, function testing 35%, integration testing 45%, and code review 55-60%.** (McConnell, 2004)
 
@@ -43,12 +39,12 @@ Main benefits:
 
 ### CODECHECK
 
-![Code checking pipeline](https://raw.githubusercontent.com/codecheckers/paper/master/figs/codecheck_overview.svg)
+![codecheck.org.uk](https://raw.githubusercontent.com/codecheckers/paper/master/figs/codecheck_overview.svg)
 
 ### Two contexts
 
 1.  Individual developers writing their own specific software.
-2.  Developers collaboratin on a common codebase.
+2.  Developers collaboration on a common codebase.
     -   Code review as gatekeeping.
 
 ### Research on code reviews
