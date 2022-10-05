@@ -13,6 +13,7 @@ add_custom_target(slides ALL
     -V transition=none
     -V backgroundTransition=none
     -V slideNumber=true
+    --include-in-header=slides.css
     WORKING_DIRECTORY ${CMAKE_SOURCE_DIR}
     DEPENDS ${CMAKE_SOURCE_DIR}/slides.md
     )
