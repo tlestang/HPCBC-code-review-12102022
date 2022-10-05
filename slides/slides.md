@@ -101,13 +101,13 @@ Understandability is key for **code reuse** and **transparency**.
 
 ::: notes
 
-If you think of a research group in which researchers write their own bespoke
-programs for their specific data manipulation or computational experiement,
-these will not be documented.
-
 Understanbility goes beyond readability, it measures how easy it is to get
 comfortable making changes to a software system. Understandability is a prime
 quality for research software.
+
+If you think of a research group in which researchers write their own bespoke
+programs for their specific data manipulation or computational experiement,
+these will not be documented.
 
 Code review is a good assessment of understandability and this makes
 it very attractive for research software.
@@ -122,8 +122,17 @@ it very attractive for research software.
 
 ::: notes
 
-Even if not working on *exactly* the same project, regular code
-reviews enable awareness of what others are doing.
+Code review goes beyond understability. Esp important in research where
+developers may be more isolated from each other and it's easy to struggle and
+come up with your own bespoke solutions.
+
+I can tell you the sotry of what is happening currently at Imperial.
+- Handful of PhD students, all training ML models
+- Need to read in and manage many different parameters
+- Through code review became obvious they are all trying to do similar thing.
+- Working together to come up with a shared solution.
+- Common, standardized way of dealing with model parameters that they all
+  understand. They will benefit from that over the course of their PhD.
 
 Code review had an indicrect impact: people talk to each other more.
 
@@ -152,6 +161,9 @@ filepath = datadir_path / Path(datafile)
 
 ::: notes
 
+If the Bachelli sutdy was carried out in a lab, knowledge transfer would be
+huge. Because knowledge is very unenvely distributed in research.
+
 Use of a yaml input file
 Dataclasses
 
@@ -166,7 +178,10 @@ A lot of good practices around...
 ::: notes
 
 The elephant in the room: nobody does code review.  Some may do it as part of
-collaborating on a distributed project
+collaborating on a distributed project.
+
+Generally within a research group or a lab/department, for the reasons above
+this is not happening.
 
 :::
 
@@ -174,10 +189,14 @@ collaborating on a distributed project
 
 Two complementary courses of actions:
 
+::: incremental
+
+-   Regularly reflect process and follow good practices.
 -   Acknowledge code review as a worthy investement:
     -   "middle-term" benefits for individuals.
     -   Short and long term benefits for collectives.
--   Regularly reflect process and follow good practices.
+
+:::
 
 . . .
 
@@ -186,6 +205,9 @@ Two complementary courses of actions:
 ::: notes
 
 It's a fact but both time and energy investement can be reduced.
+
+One prerequisite of code reivew is being okay with somebody looking
+your code.
 
 :::
 
@@ -205,14 +227,10 @@ scientific process.
 
 ::: notes
 
-One prerequisite of code reivew is being okay with somebody looking
-your code. Not only looking but judging it against some quality
-standards.
-
-I've worked with researchers in various and often feel ashamed of
-their coding practice. Several factors: lack of training, code is an
-afterthought, not used to share code. Code review can help turn the
-tide.
+shame is perhaps the biggest issue. From my modest 5 years exp as a full time
+RSE, I've worked with researchers in various and often feel ashamed of their
+coding practice. Several factors: lack of training, code is an afterthought,
+not used to share code. Code review can help turn the tide.
 
 :::
 
@@ -252,13 +270,21 @@ Dual nature: both **technical** and **social** practice.
 These must be and active effort to keep these under control. Similar
 to technical debt.
 
+. . .
+
 > A bad reviewer tries to force their preference on you. A good code
 > reviewer makes your code confrom to certain principles, but not
-> opinion.
+> opinion. (*Quote from survey participant from Greiler, 2016*)
 
 ### Lack of guidelines
 
-Where do I/we start?
+https://dev-review.readthedocs.io/
+
+https://osc-delft.github.io/posts/2021/09/03/Research-Code-Review/
+
+https://www.djmannion.net/code_review/
+
+https://blog.hpc.qmul.ac.uk/code_review_whri.html
 
 ### Code review good practices
 
