@@ -93,7 +93,7 @@ But code review is clearly effective for improving code.
 
 :::
 
-### Code review for better understandability
+### Code reviews for understandability
 
 More often than not source code is the only available form of documentation.
 
@@ -112,11 +112,25 @@ quality for research software.
 Code review is a good assessment of understandability and this makes
 it very attractive for research software.
 
+:::
 
+### Code reviews for team awareness
+
+-   Continuous knowledge exchange.
+-   Enhanced collaboration.
+-   Longer term resilience of project(s) (Bus factor!).
+
+::: notes
+
+Even if not working on *exactly* the same project, regular code
+reviews enable awareness of what others are doing.
+
+Code review had an indicrect impact: people talk to each other more.
 
 :::
 
-### Knowledge transfer
+### Code reviews for knowledge transfer
+
 Code review is peer learning.
 
 - Spread of good practices.
@@ -140,21 +154,6 @@ filepath = datadir_path / Path(datafile)
 
 Use of a yaml input file
 Dataclasses
-
-:::
-
-### Better team awareness
-
--   Continuous knowledge exchange.
--   Enhanced collaboration.
--   Longer term resilience of project(s) (Bus factor!).
-
-::: notes
-
-Even if not working on *exactly* the same project, regular code
-reviews enable awareness of what others are doing.
-
-Code review had an indicrect impact: people talk to each other more.
 
 :::
 
