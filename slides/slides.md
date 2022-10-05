@@ -7,9 +7,11 @@ author:
 keywords: ["Code Review", "Software Sustainability Institute", "Research Software"]
 ---
 
-### What is a code review?
+### Part 1
 
-![img](img/detective.png)
+<h3>What is a code review?</h3>
+
+![](img/detective.png)
 
 ### Code review?
 
@@ -17,7 +19,7 @@ Main benefits: (1) catching bugs (2) Ensuring quality standard (3) Spreading kno
 
 > <sub><sup>**Code reviews are an effective method for improving software quality. Unit testing finds approximately 25% of defects, function testing 35%, integration testing 45%, and code review 55-60%.** (McConnell, 2004)</sub></sup>
 
-![img](img/men-talking.jpg)
+![](img/men-talking.jpg)
 
 ::: notes
 
@@ -39,7 +41,7 @@ Main benefits: (1) catching bugs (2) Ensuring quality standard (3) Spreading kno
 
 ### CODECHECK
 
-![codecheck.org.uk](https://raw.githubusercontent.com/codecheckers/paper/master/figs/codecheck_overview.svg)
+![codecheck.org.uk](img/checkers.png)
 
 ### Two contexts
 
@@ -59,6 +61,9 @@ Practices* (McLeod et al, 2017)
 
 *Code review by and for scientists* (Petre & Wilson, 2014)
 
+### Part 2
+
+<h3>Challenges of code reviews</h3>
 
 ### Code review for software quality
 
@@ -260,6 +265,10 @@ to technical debt.
 ### Lack of guidelines
 
 Where do I/we start?
+
+### Part 3
+
+<h3>Code reviews done right</h3>
 
 ### Code review good practices
 
