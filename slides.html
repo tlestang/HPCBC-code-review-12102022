@@ -149,26 +149,47 @@ order to prevent bugs.</p>
 <p>But code review is clearly effective for improving code.</p>
 </aside>
 </section>
-<section id="code-review-for-better-understandability"
-class="slide level3">
-<h3>Code review for better understandability</h3>
+<section id="code-reviews-for-understandability" class="slide level3">
+<h3>Code reviews for understandability</h3>
 <p>More often than not source code is the only available form of
 documentation.</p>
 <p>Understandability is key for <strong>code reuse</strong> and
 <strong>transparency</strong>.</p>
 <aside class="notes">
-<p>If you think of a research group in which researchers write their own
-bespoke programs for their specific data manipulation or computational
-experiement, these will not be documented.</p>
 <p>Understanbility goes beyond readability, it measures how easy it is
 to get comfortable making changes to a software system.
 Understandability is a prime quality for research software.</p>
+<p>If you think of a research group in which researchers write their own
+bespoke programs for their specific data manipulation or computational
+experiement, these will not be documented.</p>
 <p>Code review is a good assessment of understandability and this makes
 it very attractive for research software.</p>
 </aside>
 </section>
-<section id="knowledge-transfer" class="slide level3">
-<h3>Knowledge transfer</h3>
+<section id="code-reviews-for-team-awareness" class="slide level3">
+<h3>Code reviews for team awareness</h3>
+<ul>
+<li>Continuous knowledge exchange.</li>
+<li>Enhanced collaboration.</li>
+<li>Longer term resilience of project(s) (Bus factor!).</li>
+</ul>
+<aside class="notes">
+<p>Code review goes beyond understability. Esp important in research
+where developers may be more isolated from each other and it’s easy to
+struggle and come up with your own bespoke solutions.</p>
+<p>I can tell you the sotry of what is happening currently at Imperial.
+- Handful of PhD students, all training ML models - Need to read in and
+manage many different parameters - Through code review became obvious
+they are all trying to do similar thing. - Working together to come up
+with a shared solution. - Common, standardized way of dealing with model
+parameters that they all understand. They will benefit from that over
+the course of their PhD.</p>
+<p>Code review had an indicrect impact: people talk to each other
+more.</p>
+</aside>
+</section>
+<section id="code-reviews-for-knowledge-transfer" class="slide level3">
+<h3>Code reviews for knowledge transfer</h3>
 <p>Code review is peer learning.</p>
 <ul>
 <li>Spread of good practices.</li>
@@ -182,23 +203,12 @@ it very attractive for research software.</p>
 # ...
 filepath = datadir_path / Path(datafile)</code></pre>
 <aside class="notes">
+<p>If the Bachelli sutdy was carried out in a lab, knowledge transfer
+would be huge. Because knowledge is very unenvely distributed in
+research.</p>
 <p>Use of a yaml input file Dataclasses</p>
 </aside>
 </div>
-</section>
-<section id="better-team-awareness" class="slide level3">
-<h3>Better team awareness</h3>
-<ul>
-<li>Continuous knowledge exchange.</li>
-<li>Enhanced collaboration.</li>
-<li>Longer term resilience of project(s) (Bus factor!).</li>
-</ul>
-<aside class="notes">
-<p>Even if not working on <em>exactly</em> the same project, regular
-code reviews enable awareness of what others are doing.</p>
-<p>Code review had an indicrect impact: people talk to each other
-more.</p>
-</aside>
 </section>
 <section id="code-review-is-challenging" class="slide level3">
 <h3>Code review is challenging</h3>
@@ -206,24 +216,31 @@ more.</p>
 <p>…but what about <strong>research software</strong>?</p>
 <aside class="notes">
 <p>The elephant in the room: nobody does code review. Some may do it as
-part of collaborating on a distributed project</p>
+part of collaborating on a distributed project.</p>
+<p>Generally within a research group or a lab/department, for the
+reasons above this is not happening.</p>
 </aside>
 </section>
 <section id="code-review-is-time-and-energy" class="slide level3">
 <h3>Code review is time and energy</h3>
 <p>Two complementary courses of actions:</p>
+<div>
 <ul>
-<li>Acknowledge code review as a worthy investement:
+<li class="fragment">Regularly reflect process and follow good
+practices.</li>
+<li class="fragment">Acknowledge code review as a worthy investement:
 <ul>
-<li>“middle-term” benefits for individuals.</li>
-<li>Short and long term benefits for collectives.</li>
+<li class="fragment">“middle-term” benefits for individuals.</li>
+<li class="fragment">Short and long term benefits for collectives.</li>
 </ul></li>
-<li>Regularly reflect process and follow good practices.</li>
 </ul>
+</div>
 <div class="fragment">
 <p><strong>Large return on investment</strong></p>
 <aside class="notes">
 <p>It’s a fact but both time and energy investement can be reduced.</p>
+<p>One prerequisite of code reivew is being okay with somebody looking
+your code.</p>
 </aside>
 </div>
 </section>
@@ -243,13 +260,11 @@ practices:</li>
 <p>Code review can put software (back?) at the heart of the
 collaborative scientific process.</p>
 <aside class="notes">
-<p>One prerequisite of code reivew is being okay with somebody looking
-your code. Not only looking but judging it against some quality
-standards.</p>
-<p>I’ve worked with researchers in various and often feel ashamed of
-their coding practice. Several factors: lack of training, code is an
-afterthought, not used to share code. Code review can help turn the
-tide.</p>
+<p>shame is perhaps the biggest issue. From my modest 5 years exp as a
+full time RSE, I’ve worked with researchers in various and often feel
+ashamed of their coding practice. Several factors: lack of training,
+code is an afterthought, not used to share code. Code review can help
+turn the tide.</p>
 </aside>
 </div>
 </section>
@@ -288,15 +303,20 @@ company. They share common skill base, vocabulary, interest in SE.</p>
 </ul>
 <p>These must be and active effort to keep these under control. Similar
 to technical debt.</p>
+<div class="fragment">
 <blockquote>
 <p>A bad reviewer tries to force their preference on you. A good code
-reviewer makes your code confrom to certain principles, but not
-opinion.</p>
+reviewer makes your code confrom to certain principles, but not opinion.
+(<em>Quote from survey participant from Greiler, 2016</em>)</p>
 </blockquote>
+</div>
 </section>
 <section id="lack-of-guidelines" class="slide level3">
 <h3>Lack of guidelines</h3>
-<p>Where do I/we start?</p>
+<p>https://dev-review.readthedocs.io/</p>
+<p>https://osc-delft.github.io/posts/2021/09/03/Research-Code-Review/</p>
+<p>https://www.djmannion.net/code_review/</p>
+<p>https://blog.hpc.qmul.ac.uk/code_review_whri.html</p>
 </section>
 <section id="code-review-good-practices" class="slide level3">
 <h3>Code review good practices</h3>
