@@ -93,53 +93,85 @@ But code review is clearly effective for improving code.
 
 :::
 
-### Understandability matters
+### Code review for better understandability
 
-![img](img/readable-code.jpg)
+More often than not source code is the only available form of documentation.
 
-Oftentimes source code is the only available docs..
+Understandability is key for **code reuse** and **transparency**.
 
 ::: notes
 
-Code review is a good assessment of understandability and this makes
-it very attractive for research software. If you think of a research
-group in which researchers write their own bespoke programs for their
-specific data manipulation or computational experiement, these will
-not be documented.
+If you think of a research group in which researchers write their own bespoke
+programs for their specific data manipulation or computational experiement,
+these will not be documented.
 
-Understandability becomes a prime quality for research software. 
+Understanbility goes beyond readability, it measures how easy it is to get
+comfortable making changes to a software system. Understandability is a prime
+quality for research software.
+
+Code review is a good assessment of understandability and this makes
+it very attractive for research software.
+
+
 
 :::
 
 ### Knowledge transfer
+Code review is peer learning.
 
-Code review is a peer learning activity.
+- Spread of good practices.
+- Homogeneisation of styles and practices
 
--   Spread of good practices.
--   Homogeneisation of styles and practicess across group.
+. . .
 
-    filepath = "/my/own/specific/path/" + "data.csv"
+```
+filepath = "/my/own/specific/path/" + "data.csv"
+```
 
-    from pathlib import Path
-    # ...
-    filepath = datadir_path / Path(datafile)
+. . .
+
+```
+from pathlib import Path
+# ...
+filepath = datadir_path / Path(datafile)
+```
+
+::: notes
+
+Use of a yaml input file
+Dataclasses
+
+:::
 
 ### Better team awareness
+
+-   Continuous knowledge exchange.
+-   Enhanced collaboration.
+-   Longer term resilience of project(s) (Bus factor!).
+
+::: notes
 
 Even if not working on *exactly* the same project, regular code
 reviews enable awareness of what others are doing.
 
--   Continuous knowledge exchange
--   Enhanced collaboration
--   Longer term resilience of project(s) (Bus factor!)
+Code review had an indicrect impact: people talk to each other more.
+
+:::
 
 ### Code review is challenging
 
-A lot of content available, but what about **research software**?
+A lot of good practices around...
+
+...but what about **research software**?
+
+::: notes
+
+The elephant in the room: nobody does code review.  Some may do it as part of
+collaborating on a distributed project
+
+:::
 
 ### Code review is time and energy
-
-It's a fact.
 
 Two complementary courses of actions:
 
@@ -152,18 +184,25 @@ Two complementary courses of actions:
 
 **Large return on investment**
 
+::: notes
+
+It's a fact but both time and energy investement can be reduced.
+
+:::
+
 ### Being protective about code
 
-There can be some unhealthy competition going on.
-
-A large number of researchers feel shy about their coding practices:
+1. There can be some unhealthy competition going on.
+2. A large number of researchers feel shy about their coding practices:
 
 -   Lack of training.
--   Other priorities, often systemic (e.g. funding).
+-   Other priorities, often structural (e.g. funding).
 -   Why would I share my code if nobody else does?
 
-Code review can turn the tide by putting software (back?) at the
-heart of scientific process.
+. . .
+
+Code review can put software (back?) at the heart of the collaborative
+scientific process.
 
 ::: notes
 
@@ -187,9 +226,9 @@ tide.
 ::: notes
 
 Code review litterature reports on the effect of heterogeneity among
-participants who can be very junior developers up to employees with
-more than 10 years experience int he software industry or even the
-same company.
+participants who can be very junior developers up to employees with more than
+10 years experience int he software industry or even the same company. They
+share common skill base, vocabulary, interest in SE.
 
 But in research this is a whole other level of heterogeneity.
 
@@ -205,9 +244,7 @@ Code review can lead both to inclusion and exclusion.
 
 Dual nature: both **technical** and **social** practice.
 
-### Bad experience 2
-
-Most common code review parasites are:
+### Bad experiences
 
 -   Irrelevant feedback.
 -   Petty arguments decoupled from overall scientific goal.
@@ -222,67 +259,90 @@ to technical debt.
 
 ### Lack of guidelines
 
-Where we start?
+Where do I/we start?
 
 ### Code review good practices
 
--   Most good practices from software engineering industry are
-    applicable.
--   Some of them for slightly different reasons
--   The following is an account of my personal experience and
-    discussions with colleagues - not evidence-based conclusions.
+A lot of the good practices from software engineering industry are applicable,
+**with a pinch of salt**.
+
+::: notes
+
+The following results from combination of industry good practice and
+observations/experimentation in a research context.
+
+:::
 
 ### Short meetings
 
 3 times 30' instead of one time 90'
 
--   Fit snuggly in the diary.
+-   Fit in a busy schedule.
 -   Doesn't feel like a big commitment.
 -   Code review can be a very demanding activity.
 
+Remember that software isn't the primary driver.
+
 ### Engage with the review
 
-It's easy for participants to fall into "comfort mode"
+Avoid "comfort mode" at all costs!
 
 -   Author describes goes through code as if logic and implementation is
     obvious.
 -   Reviewers assume author "know what they are doing".
 
-Reviewers should **never stop questionning** and trying to understand the code
+. . .
 
-Authors should **give reviewers opportunities to interject**.
+- Reviewers should **never stop questionning** and trying to understand the code
+- Authors should **give reviewers opportunities to interject**.
 
-### Let authors be aware of their responsabilities
-
-A code review's success partly rests on the author's shoulder.
+### The author's part
 
 -   Choose a small piece of code.
 -   Provide a description of the purpose and structure of the code.
 -   Think ahead what reviewers will and will not be familiar with
-    -   Specific libraries
-    -   Specific domain knowledge
+    -   Specific libraries?
+    -   Specific domain knowledge?
 -   Ensure minimum quality standard (*e.g.* style, naming)
 
 Put yourself into your reviewer(s)' shoes: what would you want to be
 told if asked to review your code?
 
-### Let authors specify the feedback they are after
+::: notes
 
-Feedback is likely to be more targeted and impactful.
+A code review's success partly rests on the author's shoulder.  Authors are not
+entirely responsible for the review success, but can definetely make it fail.
+
+:::
+
+
+### Let authors specify the feedback they are after
 
 *I'm not happy with this loop*
 
+```
     for i in `seq 1 $NUMOFFIG`
     do
         FIG=$(ls $IMDIR | head -n $i | tail -n 1)
         echo "    ${placeholderpath}/${FIG}" >> $FILE
     done
+```
+
+. . .
 
 *I'm having to define a lot of classes that don't do much, what do you
 think of my design?*
 
+. . .
+
 *I don't have any specific issue in mind, but I'm curious to see
 whether or not you find it hard to to follow the code's logic.*
+
+::: notes
+
+Feedback is likely to be more targeted and impactful.
+
+:::
 
 ### Define (and enforce) a scope
 
@@ -299,18 +359,26 @@ Example default scope: understandability
 
 Default scope can be overrriden at will.
 
+::: notes
+
+Another way to foster relevant feedback and discussions is to define a scope.
+
+:::
+
 ### Whether "it works" or not is irrelevant
 
-Code review is not an evaluation of a finished product.
+- Code review is not an evaluation of a finished product.
+- It is more rewarding to look at code that is WIP.
+- The only expectation is that code is readable by reviewers.
 
-It is more rewarding to look at code that is WIP or causing
-difficulties.
-
-The only expectation is that code is readable by reviewers:
+::: notes
 
 -   Formatting, dead code, comments...
 
-### Make it formal but safe
+:::
+
+
+### Make it formal -- but safe
 
 Code review is more effective with a clear process (formal)
 
@@ -324,52 +392,37 @@ discussing their code to each other.**
 
 Author: *This loop I wrote looks too complicated to me.*
 
+. . .
+
 Reviewer: *Hmmm yes. You could just use a pipe and `xargs`.*
+
+. . .
 
 Author: *What's `xargs`?*
 
-Reviewer: *It's basically mapping a command over a set of inputs.*
+. . .
+
+Reviewer: *It's basically mapping a command over a set of inputs - think
+functional programming!*
+
+. . .
 
 Author: *&#x2026;*
 
+. . .
+
 Reviewer: *Alhtough you could also do the same thing with `sed`.*
 
-Author: *I have no idea what you're talking about*
+. . .
+
+Author (looking frustrated): *I have no idea what you're talking about.*
 
 ### All feedback isn't helpful
 
-At least for now.
+...at least for now.
 
-Esp. reviewers with more programming experience/enthusiasm must be
+Reviewers with more programming experience/enthusiasm must be
 careful not to overwhelm beginners.
-
-### Critique the code, not the programmer
-
-Feedback can be hard to stomach
-
-*You clearly made little effort in naming things&#x2026;*
-
-*You should name this differently*
-
-*I think this name is misleading*
-
-### The art of giving feedback
-
-1.  Own you opinions.
-2.  Make it about the code.
-3.  Be specific.
-4.  Suggest an alternative.
-
-*I think this function's purpose would be much clearer if it was given
-a more explicit name.. perhaps `apply_bwd_trasform`?*
-
-### Define (and refine) a policy
-
--   Well defined process
--   Default scope
--   Moderator(s)
--   Code of conduct
--   Conflict resolution
 
 ### Use a checklist
 
@@ -387,8 +440,56 @@ a more explicit name.. perhaps `apply_bwd_trasform`?*
 -   [ ] Data clumps.
 -   ...
 
+::: notes
+
+Give an opportunity for beginners to participate.
+
+Start with the easy checks.
+
+:::
+
+### Critique the code, not the programmer
+
+*You clearly made little effort in naming things&#x2026;*
+
+*You should name this differently*
+
+*I think this name is misleading*
+
+:::
+
+Feedback can be hard to stomach
+
+:::
+
+### Giving feedback is not trivial
+
+1.  Own you opinions.
+2.  Make it about the code.
+3.  Be specific.
+4.  Suggest an alternative.
+
+. . .
+
+*I think this function's purpose would be much clearer if it was given
+a more explicit name.. perhaps `apply_bwd_transform`?*
+
+### Define (and refine) a policy
+
+-   Well defined process.
+-   Default scope.
+-   Moderator(s).
+-   Code of conduct.
+-   Conflict resolution.
+
 ### A culture of openess and collaboration
 
--   Collective ownership of research project, teamwork
-    Chris Woods' point about making research more of a team effort.
+- Components of a successful software project are
+  + Code
+  + People
+  + Communication
+- Research code review goes along with collective ownersip of research project.
 
+::: notes
+
+:::
