@@ -26,6 +26,10 @@ Main benefits: (1) catching bugs (2) Ensuring quality standard (3) Spreading kno
 
 :::
 
+### From formal inspections to code review
+
+![](img/code_inspection_and_gitlab.png)
+
 ### Not a peer review for code
 
 -   Code review **throughout the research process**:
