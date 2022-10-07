@@ -188,7 +188,7 @@ Dataclasses
 
 :::
 
-### Code review is challenging
+### Part 2: Challenges {background-color="grey" transition="zoom"}
 
 A lot of good practices around...
 
@@ -204,7 +204,7 @@ this is not happening.
 
 :::
 
-### Code review is time and energy
+### Code review is time and energy {background-color="grey"}
 
 Two complementary courses of actions:
 
@@ -230,7 +230,7 @@ your code.
 
 :::
 
-### Being protective about code
+### Being protective about code {background-color="grey"}
 
 1. There can be some unhealthy competition going on.
 2. A large number of researchers feel shy about their coding practices:
@@ -253,7 +253,7 @@ not used to share code. Code review can help turn the tide.
 
 :::
 
-### Strong heterogeneity among team members
+### Strong heterogeneity among team members {background-color="grey"}
 
 -   Experience.
 -   Skills (*e.g.* programming languages).
@@ -270,17 +270,17 @@ But in research this is a whole other level of heterogeneity.
 
 :::
 
-### Finding reviewers
+### Finding reviewers {background-color="grey"}
 
 What about "lone coders"?
 
-### Bad experiences
+### Bad experiences {background-color="grey"}
 
 Code review can lead both to inclusion and exclusion.
 
 Dual nature: both **technical** and **social** practice.
 
-### Bad experiences
+### Bad experiences {background-color="grey"}
 
 -   Irrelevant feedback.
 -   Petty arguments decoupled from overall scientific goal.
@@ -295,7 +295,7 @@ to technical debt.
 > reviewer makes your code confrom to certain principles, but not
 > opinion. (*Quote from survey participant from Greiler, 2016*)
 
-### Lack of guidelines
+### Lack of guidelines {background-color="grey"}
 
 https://dev-review.readthedocs.io/
 
