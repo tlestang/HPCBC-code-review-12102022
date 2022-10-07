@@ -77,7 +77,7 @@ Practices* (McLeod et al, 2017)
 
 ### Part 2
 
-<h3>Challenges of code reviews</h3>
+Benefits of code reviews for research software
 
 ### Code review for software quality
 
