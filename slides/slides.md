@@ -5,6 +5,9 @@ author:
 - Dominik Krzemiński
 - Valerio Maggio
 keywords: ["Code Review", "Software Sustainability Institute", "Research Software"]
+title-slide-attributes:
+    data-background-image: img/ssi_title_background.png
+    data-background-size: contain
 ---
 
 ### Part 1
