@@ -305,11 +305,7 @@ https://www.djmannion.net/code_review/
 
 https://blog.hpc.qmul.ac.uk/code_review_whri.html
 
-### Part 3
-
-<h3>Code reviews done right</h3>
-
-### Code review good practices
+### Part 3: Code review good practices {background-color="green" transition="zoom"}
 
 A lot of the good practices from software engineering industry are applicable,
 **with a pinch of salt**.
@@ -321,7 +317,7 @@ observations/experimentation in a research context.
 
 :::
 
-### Short meetings
+### Short meetings {background-color="green"}
 
 3 times 30' instead of one time 90'
 
@@ -331,7 +327,7 @@ observations/experimentation in a research context.
 
 Remember that software isn't the primary driver.
 
-### Engage with the review
+### Engage with the review {background-color="green"}
 
 Avoid "comfort mode" at all costs!
 
@@ -344,7 +340,7 @@ Avoid "comfort mode" at all costs!
 - Reviewers should **never stop questionning** and trying to understand the code
 - Authors should **give reviewers opportunities to interject**.
 
-### The author's part
+### The author's part {background-color="green"}
 
 -   Choose a small piece of code.
 -   Provide a description of the purpose and structure of the code.
@@ -364,7 +360,7 @@ entirely responsible for the review success, but can definetely make it fail.
 :::
 
 
-### Let authors specify the feedback they are after
+### Let authors specify the feedback they are after {background-color="green"}
 
 *I'm not happy with this loop*
 
@@ -392,7 +388,7 @@ Feedback is likely to be more targeted and impactful.
 
 :::
 
-### Define (and enforce) a scope
+### Define (and enforce) a scope {background-color="green"}
 
 Example default scope: understandability
 
@@ -413,7 +409,7 @@ Another way to foster relevant feedback and discussions is to define a scope.
 
 :::
 
-### Whether "it works" or not is irrelevant
+### Whether "it works" or not is irrelevant {background-color="green"}
 
 - Code review is not an evaluation of a finished product.
 - It is more rewarding to look at code that is WIP.
@@ -426,7 +422,7 @@ Another way to foster relevant feedback and discussions is to define a scope.
 :::
 
 
-### Make it formal -- but safe
+### Make it formal -- but safe {background-color="green"}
 
 Code review is more effective with a clear process (formal)
 
@@ -436,7 +432,7 @@ Code review meetings *must* remain inclusives and supporting spaces.
 **It's about creating an environment where people feel confident about
 discussing their code to each other.**
 
-### Overheard in the next meeting room
+### Overheard in the next meeting room {background-color="#C72A3D"}
 
 Author: *This loop I wrote looks too complicated to me.*
 
@@ -465,14 +461,14 @@ Reviewer: *Alhtough you could also do the same thing with `sed`.*
 
 Author (looking frustrated): *I have no idea what you're talking about.*
 
-### All feedback isn't helpful
+### All feedback isn't helpful {background-color="green"}
 
 ...at least for now.
 
 Reviewers with more programming experience/enthusiasm must be
 careful not to overwhelm beginners.
 
-### Use a checklist
+### Use a checklist {background-color="green"}
 
 -   [ ] Poor formatting.
 -   [ ] Dead code.
@@ -496,7 +492,7 @@ Start with the easy checks.
 
 :::
 
-### Critique the code, not the programmer
+### Critique the code, not the programmer {background-color="#C72A3D"}
 
 *You clearly made little effort in naming things&#x2026;*
 
@@ -504,13 +500,13 @@ Start with the easy checks.
 
 *I think this name is misleading*
 
-:::
+::: notes
 
 Feedback can be hard to stomach
 
 :::
 
-### Giving feedback is not trivial
+### Giving feedback is not trivial {background-color="green"}
 
 1.  Own you opinions.
 2.  Make it about the code.
@@ -522,7 +518,7 @@ Feedback can be hard to stomach
 *I think this function's purpose would be much clearer if it was given
 a more explicit name.. perhaps `apply_bwd_transform`?*
 
-### Define (and refine) a policy
+### Define (and refine) a policy {background-color="green"}
 
 -   Well defined process.
 -   Default scope.
