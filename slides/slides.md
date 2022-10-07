@@ -75,11 +75,11 @@ Practices* (McLeod et al, 2017)
 
 *Code review by and for scientists* (Petre & Wilson, 2014)
 
-### Part 2
+### Part 1 {background-color="#002147" transition="zoom"}
 
 <h3>Challenges of code reviews</h3>
 
-### Code review for software quality
+### Code review for software quality {background-color="#002147"}
 
 1.  Defects
 2.  Code improvements
@@ -98,7 +98,7 @@ complying to a naming scheme, identifying code smells.
 
 :::
 
-### Code review for software quality
+### Code review for software quality {background-color="#002147"}
 
 ![(Bachelli & Bird, 13)](img/defects-improvement-bachelli-bird2013.png)
 
@@ -112,7 +112,7 @@ But code review is clearly effective for improving code.
 
 :::
 
-### Code reviews for understandability
+### Code reviews for understandability {background-color="#002147"}
 
 More often than not source code is the only available form of documentation.
 
@@ -133,7 +133,7 @@ it very attractive for research software.
 
 :::
 
-### Code reviews for team awareness
+### Code reviews for team awareness {background-color="#002147"}
 
 -   Continuous knowledge exchange.
 -   Enhanced collaboration.
@@ -157,7 +157,7 @@ Code review had an indicrect impact: people talk to each other more.
 
 :::
 
-### Code reviews for knowledge transfer
+### Code reviews for knowledge transfer {background-color="#002147"}
 
 Code review is peer learning.
 
