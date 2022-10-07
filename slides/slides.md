@@ -38,6 +38,10 @@ Main benefits:
 
 ![](img/code_inspection_and_gitlab.png)
 
+### Asynchronious Code Review
+
+![](img/cr-cycle.png)
+
 ### Not a peer review for code
 
 -   Code review **throughout the research process**:
