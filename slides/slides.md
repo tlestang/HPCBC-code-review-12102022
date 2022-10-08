@@ -270,19 +270,10 @@ But in research this is a whole other level of heterogeneity.
 
 :::
 
-### Finding reviewers {background-color="grey"}
+### Other challenges {background-color="grey"}
 
-What about "lone coders"?
-
-### Lack of guidelines {background-color="grey"}
-
-https://dev-review.readthedocs.io/
-
-https://osc-delft.github.io/posts/2021/09/03/Research-Code-Review/
-
-https://www.djmannion.net/code_review/
-
-https://blog.hpc.qmul.ac.uk/code_review_whri.html
+- Finding reviewers
+- Finding guidance or mentors
 
 ### Part 3: Code review good practices {background-color="green" transition="zoom"}
 
