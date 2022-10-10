@@ -91,10 +91,10 @@ class="slide level3">
 <li>Informal</li>
 <li>Low stakes</li>
 </ul></li>
-<li>Commonly referred as “Modern Code Review” in the SE litterature.
+<li>Commonly referred as “Modern Code Review” in the SE literature.
 Bachelli and Bird 2013</li>
-<li>Can be asynchronous (GitHub’s Pull Requests) or synchronous (in
-person chat).</li>
+<li>Can be <em>asynchronous</em> (GitHub’s Pull Requests) or
+<em>synchronous</em> (in person chat).</li>
 </ul>
 </section>
 <section id="codecheck" class="slide level3">
@@ -145,7 +145,8 @@ reviews, you’ll find that the main motivation is making the code better.
 This means identifying defects and improving the code.</p>
 <p>Code improvements are changes that do not affect the functionalities
 but make the code more readable or maintainable. You can think of
-complying to a naming scheme, identifying code smells.</p>
+complying to a naming scheme, identifying code smells, or adhering to
+existing software design choices.</p>
 </aside>
 </section>
 <section id="code-review-for-software-quality-1" class="slide level3"
@@ -195,7 +196,7 @@ data-background-color="#002147">
 <p>Code review goes beyond understability. Esp important in research
 where developers may be more isolated from each other and it’s easy to
 struggle and come up with your own bespoke solutions.</p>
-<p>I can tell you the sotry of what is happening currently at Imperial.
+<p>I can tell you the story of what is happening currently at Imperial.
 - Handful of PhD students, all training ML models - Need to read in and
 manage many different parameters - Through code review became obvious
 they are all trying to do similar thing. - Working together to come up
@@ -221,10 +222,11 @@ transfer</h3>
 <div class="fragment">
 <pre><code>from pathlib import Path
 # ...
-filepath = datadir_path / Path(datafile)</code></pre>
+datadir_path = Path(&quot;/my/own/specific/path/&quot;)
+filepath = datadir_path / &quot;data.csv&quot;</code></pre>
 <aside class="notes">
 <p>If the Bachelli sutdy was carried out in a lab, knowledge transfer
-would be huge. Because knowledge is very unenvely distributed in
+would be huge. Because knowledge is very unevenly distributed in
 research.</p>
 <p>Use of a yaml input file Dataclasses</p>
 </aside>
@@ -251,7 +253,7 @@ data-background-color="grey">
 <ul>
 <li class="fragment">Regularly reflect process and follow good
 practices.</li>
-<li class="fragment">Acknowledge code review as a worthy investement:
+<li class="fragment">Acknowledge code review as a worthy investment:
 <ul>
 <li class="fragment">“middle-term” benefits for individuals.</li>
 <li class="fragment">Short and long term benefits for collectives.</li>
@@ -328,9 +330,9 @@ applicable, <strong>with a pinch of salt</strong>.</p>
 observations/experimentation in a research context.</p>
 </aside>
 </section>
-<section id="short-meetings" class="slide level3"
+<section id="keep-it-short" class="slide level3"
 data-background-color="green">
-<h3 data-background-color="green">Short meetings</h3>
+<h3 data-background-color="green">Keep it short</h3>
 <p>3 times 30’ instead of one time 90’</p>
 <ul>
 <li>Fit in a busy schedule.</li>
@@ -339,29 +341,43 @@ data-background-color="green">
 </ul>
 <p>Remember that software isn’t the primary driver.</p>
 </section>
-<section id="engage-with-the-review" class="slide level3"
+<section id="avoid-comfort-mode" class="slide level3"
 data-background-color="green">
-<h3 data-background-color="green">Engage with the review</h3>
-<p>Avoid “comfort mode” at all costs!</p>
-<ul>
-<li>Author describes goes through code as if logic and implementation is
-obvious.</li>
-<li>Reviewers assume author “know what they are doing”.</li>
-</ul>
-<div class="fragment">
-<ul>
-<li>Reviewers should <strong>never stop questionning</strong> and trying
-to understand the code</li>
-<li>Authors should <strong>give reviewers opportunities to
-interject</strong>.</li>
-</ul>
-</div>
+<h3 data-background-color="green">Avoid comfort mode</h3>
+<p><em>That doesn’t look quite right but I guess that’s okay…</em></p>
+<p><em>I just must have missed something</em></p>
+<p>In code review meetings, authors should make is easy for reviewers to
+interject.</p>
+<aside class="notes">
+<p>It can be hard for more shy people to dare interject and ask
+questions. Especially if they have less experience than the author.</p>
+<p>Easy to think reviewers have all the responsability but actually
+authors have a huge impact on the code review success.</p>
+</aside>
 </section>
 <section id="the-authors-part" class="slide level3"
+data-background-color="#C72A3D">
+<h3 data-background-color="#C72A3D">The author’s part</h3>
+<figure>
+<img data-src="img/comfort_mr_header.png"
+alt="A very scarce description" />
+<figcaption aria-hidden="true">A very scarce description</figcaption>
+</figure>
+</section>
+<section id="the-authors-part-1" class="slide level3"
+data-background-color="#C72A3D">
+<h3 data-background-color="#C72A3D">The author’s part</h3>
+<figure>
+<img data-src="img/comfort_mr_commits.png"
+alt="A very scarce description" />
+<figcaption aria-hidden="true">A very scarce description</figcaption>
+</figure>
+</section>
+<section id="the-authors-part-2" class="slide level3"
 data-background-color="green">
 <h3 data-background-color="green">The author’s part</h3>
 <ul>
-<li>Choose a small piece of code.</li>
+<li>Keep it small! (~30’)</li>
 <li>Provide a description of the purpose and structure of the code.</li>
 <li>Think ahead what reviewers will and will not be familiar with
 <ul>
@@ -376,18 +392,20 @@ told if asked to review your code?</p>
 <p>A code review’s success partly rests on the author’s shoulder.
 Authors are not entirely responsible for the review success, but can
 definetely make it fail.</p>
+<p>Extra effort for everyone in the team, but goes faster as a whole.
+Also makes life easier for everyone - offsets initial effort.</p>
 </aside>
 </section>
-<section id="let-authors-specify-the-feedback-they-are-after"
-class="slide level3" data-background-color="green">
-<h3 data-background-color="green">Let authors specify the feedback they
-are after</h3>
+<section id="specify-the-feedback-you-are-after" class="slide level3"
+data-background-color="green">
+<h3 data-background-color="green">Specify the feedback you are
+after</h3>
 <p><em>I’m not happy with this loop</em></p>
-<pre><code>    for i in `seq 1 $NUMOFFIG`
-    do
-        FIG=$(ls $IMDIR | head -n $i | tail -n 1)
-        echo &quot;    ${placeholderpath}/${FIG}&quot; &gt;&gt; $FILE
-    done</code></pre>
+<pre><code>for i in `seq 1 $NUMOFFIG`
+do
+  FIG=$(ls $IMDIR | head -n $i | tail -n 1)
+  echo &quot;    ${placeholderpath}/${FIG}&quot; &gt;&gt; $FILE
+done</code></pre>
 <div class="fragment">
 <p><em>I’m having to define a lot of classes that don’t do much, what do
 you think of my design?</em></p>
@@ -405,12 +423,12 @@ data-background-color="green">
 <h3 data-background-color="green">Define (and enforce) a scope</h3>
 <p>Example default scope: understandability</p>
 <ul>
-<li>Poor formatting.</li>
 <li>Obscure variable names.</li>
 <li>Complex conditionals.</li>
-<li>Long functions.</li>
+<li>Duplicated code.</li>
 <li>Long parameter lists.</li>
-<li><del>Design red flags</del>.</li>
+<li>Shallow modules.</li>
+<li><del>Standard compliance.</del></li>
 <li><del>Performance sinks</del>.</li>
 <li><del>Security concerns</del>.</li>
 </ul>
