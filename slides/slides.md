@@ -290,7 +290,7 @@ observations/experimentation in a research context.
 
 :::
 
-### Short meetings {background-color="green"}
+### Keep it short {background-color="green"}
 
 3 times 30' instead of one time 90'
 
@@ -300,22 +300,36 @@ observations/experimentation in a research context.
 
 Remember that software isn't the primary driver.
 
-### Engage with the review {background-color="green"}
+### Avoid comfort mode {background-color="green"}
 
-Avoid "comfort mode" at all costs!
+*That doesn't look quite right but I guess that's okay...*
 
--   Author describes goes through code as if logic and implementation is
-    obvious.
--   Reviewers assume author "know what they are doing".
+*I just must have missed something*
 
-. . .
+In code review meetings, authors should make is easy for reviewers to
+interject.
 
-- Reviewers should **never stop questionning** and trying to understand the code
-- Authors should **give reviewers opportunities to interject**.
+::: notes
+
+It can be hard for more shy people to dare interject and ask
+questions. Especially if they have less experience than the author.
+
+Easy to think reviewers have all the responsability but actually authors have a
+huge impact on the code review success.
+
+:::
+
+### The author's part {background-color="#C72A3D"}
+
+![A very scarce description](img/comfort_mr_header.png)
+
+### The author's part {background-color="#C72A3D"}
+
+![A very scarce description](img/comfort_mr_commits.png)
 
 ### The author's part {background-color="green"}
 
--   Choose a small piece of code.
+-   Keep it small! (~30')
 -   Provide a description of the purpose and structure of the code.
 -   Think ahead what reviewers will and will not be familiar with
     -   Specific libraries?
@@ -330,19 +344,21 @@ told if asked to review your code?
 A code review's success partly rests on the author's shoulder.  Authors are not
 entirely responsible for the review success, but can definetely make it fail.
 
+Extra effort for everyone in the team, but goes faster as a whole. Also makes
+life easier for everyone - offsets initial effort.
+
 :::
 
-
-### Let authors specify the feedback they are after {background-color="green"}
+### Specify the feedback you are after {background-color="green"}
 
 *I'm not happy with this loop*
 
 ```
-    for i in `seq 1 $NUMOFFIG`
-    do
-        FIG=$(ls $IMDIR | head -n $i | tail -n 1)
-        echo "    ${placeholderpath}/${FIG}" >> $FILE
-    done
+for i in `seq 1 $NUMOFFIG`
+do
+  FIG=$(ls $IMDIR | head -n $i | tail -n 1)
+  echo "    ${placeholderpath}/${FIG}" >> $FILE
+done
 ```
 
 . . .
@@ -365,12 +381,12 @@ Feedback is likely to be more targeted and impactful.
 
 Example default scope: understandability
 
--   Poor formatting.
 -   Obscure variable names.
 -   Complex conditionals.
--   Long functions.
+-   Duplicated code.
 -   Long parameter lists.
--   ~~Design red flags~~.
+-   Shallow modules.
+-   ~~Standard compliance.~~
 -   ~~Performance sinks~~.
 -   ~~Security concerns~~.
 
