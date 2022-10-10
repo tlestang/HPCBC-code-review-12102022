@@ -41,9 +41,18 @@ Main benefits:
 
 ![](img/code_inspection_and_gitlab.png)
 
-### Asynchronious Code Review
+### Asynchronous Code Review
 
 ![](img/cr-cycle.png)
+
+### Synchronous Code Review
+
+![](img/sync_review_imperial.jpg){width=65%}
+
+<p style="font-size: 0.5em">Elise Özalp, Yaxin, Defne Ozan, Daniel Kelshaw
+[(https://magrilab.ae.ic.ac.uk)](https://magrilab.ae.ic.ac.uk/group.html),
+Thibault Lestang. Photo cred: Neil Montague.</p>
+<p style="font-size: 0.4em">Department of Aeronautics, Imperial College London</p>
 
 ### Not a peer review for code
 
@@ -149,7 +158,21 @@ Code review goes beyond understability. Esp important in research where
 developers may be more isolated from each other and it's easy to struggle and
 come up with your own bespoke solutions.
 
-I can tell you the story of what is happening currently at Imperial.
+:::
+
+### Code reviews for team awareness {background-color="#002147"}
+
+![](img/sync_review_imperial.jpg){width=65%}
+
+<p style="font-size: 0.5em">Elise Özalp, Yaxin, Defne Ozan, Daniel Kelshaw
+[(https://magrilab.ae.ic.ac.uk)](https://magrilab.ae.ic.ac.uk/group.html),
+Thibault Lestang. Photo cred: Neil Montague.</p>
+<p style="font-size: 0.4em">Department of Aeronautics, Imperial College
+London</p>
+
+::: notes
+
+Imperial story
 - Handful of PhD students, all training ML models
 - Need to read in and manage many different parameters
 - Through code review became obvious they are all trying to do similar thing.
