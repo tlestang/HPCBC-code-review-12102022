@@ -51,9 +51,9 @@ Main benefits:
     -   Frequent
     -   Informal
     -   Low stakes
--   Commonly referred as "Modern Code Review" in the SE litterature.
+-   Commonly referred as "Modern Code Review" in the SE literature.
     Bachelli and Bird 2013
--   Can be asynchronous (GitHub's Pull Requests) or synchronous (in
+-   Can be _asynchronous_ (GitHub's Pull Requests) or _synchronous_ (in
     person chat).
 
 ### CODECHECK
@@ -97,7 +97,8 @@ means identifying defects and improving the code.
 
 Code improvements are changes that do not affect the functionalities
 but make the code more readable or maintainable. You can think of
-complying to a naming scheme, identifying code smells.
+complying to a naming scheme, identifying code smells, or adhering to 
+existing software design choices.
 
 :::
 
@@ -148,7 +149,7 @@ Code review goes beyond understability. Esp important in research where
 developers may be more isolated from each other and it's easy to struggle and
 come up with your own bespoke solutions.
 
-I can tell you the sotry of what is happening currently at Imperial.
+I can tell you the story of what is happening currently at Imperial.
 - Handful of PhD students, all training ML models
 - Need to read in and manage many different parameters
 - Through code review became obvious they are all trying to do similar thing.
@@ -178,13 +179,14 @@ filepath = "/my/own/specific/path/" + "data.csv"
 ```
 from pathlib import Path
 # ...
-filepath = datadir_path / Path(datafile)
+datadir_path = Path("/my/own/specific/path/")
+filepath = datadir_path / "data.csv"
 ```
 
 ::: notes
 
 If the Bachelli sutdy was carried out in a lab, knowledge transfer would be
-huge. Because knowledge is very unenvely distributed in research.
+huge. Because knowledge is very unevenly distributed in research.
 
 Use of a yaml input file
 Dataclasses
@@ -214,7 +216,7 @@ Two complementary courses of actions:
 ::: incremental
 
 -   Regularly reflect process and follow good practices.
--   Acknowledge code review as a worthy investement:
+-   Acknowledge code review as a worthy investment:
     -   "middle-term" benefits for individuals.
     -   Short and long term benefits for collectives.
 
