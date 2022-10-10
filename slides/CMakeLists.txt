@@ -14,6 +14,7 @@ add_custom_target(slides ALL
     -V backgroundTransition=none
     -V slideNumber=true
     --include-in-header=slides.css
+    --highlight-style zenburn
     WORKING_DIRECTORY ${CMAKE_SOURCE_DIR}
     DEPENDS ${CMAKE_SOURCE_DIR}/slides.md
     )
