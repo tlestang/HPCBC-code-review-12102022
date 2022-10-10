@@ -303,7 +303,7 @@ But in research this is a whole other level of heterogeneity.
 - Finding reviewers
 - Finding guidance or mentors
 
-### Part 3: Code review good practices {background-color="green" transition="zoom"}
+### Part 3: Code review good practices {background-color="#a5f99e" transition="zoom"}
 
 A lot of the good practices from software engineering industry are applicable,
 **with a pinch of salt**.
@@ -315,7 +315,7 @@ observations/experimentation in a research context.
 
 :::
 
-### Keep it short {background-color="green"}
+### Keep it short {background-color="#a5f99e"}
 
 3 times 30' instead of one time 90'
 
@@ -325,7 +325,7 @@ observations/experimentation in a research context.
 
 Remember that software isn't the primary driver.
 
-### Avoid comfort mode {background-color="green"}
+### Avoid comfort mode {background-color="#a5f99e"}
 
 *That doesn't look quite right but I guess that's okay...*
 
@@ -344,15 +344,15 @@ huge impact on the code review success.
 
 :::
 
-### The author's part {background-color="#C72A3D"}
+### The author's part {background-color="#eaaeb5"}
 
 ![A very scarce description](img/comfort_mr_header.png)
 
-### The author's part {background-color="#C72A3D"}
+### The author's part {background-color="#eaaeb5"}
 
 ![A very scarce description](img/comfort_mr_commits.png)
 
-### The author's part {background-color="green"}
+### The author's part {background-color="#a5f99e"}
 
 -   Keep it small! (~30')
 -   Provide a description of the purpose and structure of the code.
@@ -374,7 +374,7 @@ life easier for everyone - offsets initial effort.
 
 :::
 
-### Specify the feedback you are after {background-color="green"}
+### Specify the feedback you are after {background-color="#a5f99e"}
 
 *I'm not happy with this loop*
 
@@ -402,7 +402,7 @@ Feedback is likely to be more targeted and impactful.
 
 :::
 
-### Define (and enforce) a scope {background-color="green"}
+### Define (and enforce) a scope {background-color="#a5f99e"}
 
 Example default scope: understandability
 
@@ -423,7 +423,7 @@ Another way to foster relevant feedback and discussions is to define a scope.
 
 :::
 
-### Whether "it works" or not is irrelevant {background-color="green"}
+### Whether "it works" or not is irrelevant {background-color="#a5f99e"}
 
 - Code review is not an evaluation of a finished product.
 - It is more rewarding to look at code that is WIP.
@@ -436,7 +436,7 @@ Another way to foster relevant feedback and discussions is to define a scope.
 :::
 
 
-### Make it formal -- but safe {background-color="green"}
+### Make it formal -- but safe {background-color="#a5f99e"}
 
 Code review is more effective with a clear process (formal)
 
@@ -446,7 +446,7 @@ Code review meetings *must* remain inclusives and supporting spaces.
 **It's about creating an environment where people feel confident about
 discussing their code to each other.**
 
-### Overheard in the next meeting room {background-color="#C72A3D"}
+### Overheard in the next meeting room {background-color="#eaaeb5"}
 
 Author: *This loop I wrote looks too complicated to me.*
 
@@ -475,14 +475,14 @@ Reviewer: *Alhtough you could also do the same thing with `sed`.*
 
 Author (looking frustrated): *I have no idea what you're talking about.*
 
-### All feedback isn't helpful {background-color="green"}
+### All feedback isn't helpful {background-color="#a5f99e"}
 
 ...at least for now.
 
 Reviewers with more programming experience/enthusiasm must be
 careful not to overwhelm beginners.
 
-### Use a checklist {background-color="green"}
+### Use a checklist {background-color="#a5f99e"}
 
 -   [ ] Poor formatting.
 -   [ ] Dead code.
@@ -506,7 +506,7 @@ Start with the easy checks.
 
 :::
 
-### Critique the code, not the programmer {background-color="#C72A3D"}
+### Critique the code, not the programmer {background-color="#eaaeb5"}
 
 *You clearly made little effort in naming things&#x2026;*
 
@@ -520,7 +520,7 @@ Feedback can be hard to stomach
 
 :::
 
-### Giving feedback is not trivial {background-color="green"}
+### Giving feedback is not trivial {background-color="#a5f99e"}
 
 1.  Own you opinions.
 2.  Make it about the code.
@@ -542,7 +542,7 @@ Code reviews can drive both inclusion and exclusion.
 > reviewer makes your code confrom to certain principles, but not
 > opinion. (*Quote from survey participant from Greiler, 2016*)
 
-### Define (and refine) a policy {background-color="green"}
+### Define (and refine) a policy {background-color="#a5f99e"}
 
 -   Well defined process.
 -   Default scope.
