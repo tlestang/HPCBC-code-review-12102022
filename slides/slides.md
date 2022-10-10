@@ -48,7 +48,7 @@ Main benefits:
     -   Frequent
     -   Informal
     -   Low stakes
--   Commonly referred as "Modern Code Review" in the SE litterature.
+-   Commonly referred as "Modern Code Review" in the SE literature.
     Bachelli and Bird 2013
 -   Can be asynchronous (GitHub's Pull Requests) or synchronous (in
     person chat).
