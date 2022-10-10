@@ -170,13 +170,13 @@ Code review is peer learning.
 
 . . .
 
-```
+```python
 filepath = "/my/own/specific/path/" + "data.csv"
 ```
 
 . . .
 
-```
+```python
 from pathlib import Path
 # ...
 datadir_path = Path("/my/own/specific/path/")
@@ -355,7 +355,7 @@ life easier for everyone - offsets initial effort.
 
 *I'm not happy with this loop*
 
-```
+```bash
 for i in `seq 1 $NUMOFFIG`
 do
   FIG=$(ls $IMDIR | head -n $i | tail -n 1)
