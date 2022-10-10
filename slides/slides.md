@@ -5,6 +5,9 @@ author:
 - Dominik Krzemiński
 - Valerio Maggio
 keywords: ["Code Review", "Software Sustainability Institute", "Research Software"]
+title-slide-attributes:
+    data-background-image: img/ssi_title_background.png
+    data-background-size: contain
 ---
 
 ### Part 1
@@ -75,11 +78,11 @@ Practices* (McLeod et al, 2017)
 
 *Code review by and for scientists* (Petre & Wilson, 2014)
 
-### Part 2
+### Part 1 {background-color="#002147" transition="zoom"}
 
-<h3>Challenges of code reviews</h3>
+Benefits of code reviews for research software
 
-### Code review for software quality
+### Code review for software quality {background-color="#002147"}
 
 1.  Defects
 2.  Code improvements
@@ -99,7 +102,7 @@ existing software design choices.
 
 :::
 
-### Code review for software quality
+### Code review for software quality {background-color="#002147"}
 
 ![(Bachelli & Bird, 13)](img/defects-improvement-bachelli-bird2013.png)
 
@@ -113,7 +116,7 @@ But code review is clearly effective for improving code.
 
 :::
 
-### Code reviews for understandability
+### Code reviews for understandability {background-color="#002147"}
 
 More often than not source code is the only available form of documentation.
 
@@ -134,7 +137,7 @@ it very attractive for research software.
 
 :::
 
-### Code reviews for team awareness
+### Code reviews for team awareness {background-color="#002147"}
 
 -   Continuous knowledge exchange.
 -   Enhanced collaboration.
@@ -158,7 +161,7 @@ Code review had an indicrect impact: people talk to each other more.
 
 :::
 
-### Code reviews for knowledge transfer
+### Code reviews for knowledge transfer {background-color="#002147"}
 
 Code review is peer learning.
 
@@ -190,7 +193,7 @@ Dataclasses
 
 :::
 
-### Code review is challenging
+### Part 2: Challenges {background-color="grey" transition="zoom"}
 
 A lot of good practices around...
 
@@ -206,7 +209,7 @@ this is not happening.
 
 :::
 
-### Code review is time and energy
+### Code review is time and energy {background-color="grey"}
 
 Two complementary courses of actions:
 
@@ -232,7 +235,7 @@ your code.
 
 :::
 
-### Being protective about code
+### Being protective about code {background-color="grey"}
 
 1. There can be some unhealthy competition going on.
 2. A large number of researchers feel shy about their coding practices:
@@ -255,7 +258,7 @@ not used to share code. Code review can help turn the tide.
 
 :::
 
-### Strong heterogeneity among team members
+### Strong heterogeneity among team members {background-color="grey"}
 
 -   Experience.
 -   Skills (*e.g.* programming languages).
@@ -272,46 +275,12 @@ But in research this is a whole other level of heterogeneity.
 
 :::
 
-### Finding reviewers
+### Other challenges {background-color="grey"}
 
-What about "lone coders"?
+- Finding reviewers
+- Finding guidance or mentors
 
-### Bad experiences
-
-Code review can lead both to inclusion and exclusion.
-
-Dual nature: both **technical** and **social** practice.
-
-### Bad experiences
-
--   Irrelevant feedback.
--   Petty arguments decoupled from overall scientific goal.
--   Power struggles.
-
-These must be and active effort to keep these under control. Similar
-to technical debt.
-
-. . .
-
-> A bad reviewer tries to force their preference on you. A good code
-> reviewer makes your code confrom to certain principles, but not
-> opinion. (*Quote from survey participant from Greiler, 2016*)
-
-### Lack of guidelines
-
-https://dev-review.readthedocs.io/
-
-https://osc-delft.github.io/posts/2021/09/03/Research-Code-Review/
-
-https://www.djmannion.net/code_review/
-
-https://blog.hpc.qmul.ac.uk/code_review_whri.html
-
-### Part 3
-
-<h3>Code reviews done right</h3>
-
-### Code review good practices
+### Part 3: Code review good practices {background-color="green" transition="zoom"}
 
 A lot of the good practices from software engineering industry are applicable,
 **with a pinch of salt**.
@@ -323,7 +292,7 @@ observations/experimentation in a research context.
 
 :::
 
-### Short meetings
+### Keep it short {background-color="green"}
 
 3 times 30' instead of one time 90'
 
@@ -333,22 +302,36 @@ observations/experimentation in a research context.
 
 Remember that software isn't the primary driver.
 
-### Engage with the review
+### Avoid comfort mode {background-color="green"}
 
-Avoid "comfort mode" at all costs!
+*That doesn't look quite right but I guess that's okay...*
 
--   Author describes goes through code as if logic and implementation is
-    obvious.
--   Reviewers assume author "know what they are doing".
+*I just must have missed something*
 
-. . .
+In code review meetings, authors should make is easy for reviewers to
+interject.
 
-- Reviewers should **never stop questionning** and trying to understand the code
-- Authors should **give reviewers opportunities to interject**.
+::: notes
 
-### The author's part
+It can be hard for more shy people to dare interject and ask
+questions. Especially if they have less experience than the author.
 
--   Choose a small piece of code.
+Easy to think reviewers have all the responsability but actually authors have a
+huge impact on the code review success.
+
+:::
+
+### The author's part {background-color="#C72A3D"}
+
+![A very scarce description](img/comfort_mr_header.png)
+
+### The author's part {background-color="#C72A3D"}
+
+![A very scarce description](img/comfort_mr_commits.png)
+
+### The author's part {background-color="green"}
+
+-   Keep it small! (~30')
 -   Provide a description of the purpose and structure of the code.
 -   Think ahead what reviewers will and will not be familiar with
     -   Specific libraries?
@@ -363,19 +346,21 @@ told if asked to review your code?
 A code review's success partly rests on the author's shoulder.  Authors are not
 entirely responsible for the review success, but can definetely make it fail.
 
+Extra effort for everyone in the team, but goes faster as a whole. Also makes
+life easier for everyone - offsets initial effort.
+
 :::
 
-
-### Let authors specify the feedback they are after
+### Specify the feedback you are after {background-color="green"}
 
 *I'm not happy with this loop*
 
 ```
-    for i in `seq 1 $NUMOFFIG`
-    do
-        FIG=$(ls $IMDIR | head -n $i | tail -n 1)
-        echo "    ${placeholderpath}/${FIG}" >> $FILE
-    done
+for i in `seq 1 $NUMOFFIG`
+do
+  FIG=$(ls $IMDIR | head -n $i | tail -n 1)
+  echo "    ${placeholderpath}/${FIG}" >> $FILE
+done
 ```
 
 . . .
@@ -394,16 +379,16 @@ Feedback is likely to be more targeted and impactful.
 
 :::
 
-### Define (and enforce) a scope
+### Define (and enforce) a scope {background-color="green"}
 
 Example default scope: understandability
 
--   Poor formatting.
 -   Obscure variable names.
 -   Complex conditionals.
--   Long functions.
+-   Duplicated code.
 -   Long parameter lists.
--   ~~Design red flags~~.
+-   Shallow modules.
+-   ~~Standard compliance.~~
 -   ~~Performance sinks~~.
 -   ~~Security concerns~~.
 
@@ -415,7 +400,7 @@ Another way to foster relevant feedback and discussions is to define a scope.
 
 :::
 
-### Whether "it works" or not is irrelevant
+### Whether "it works" or not is irrelevant {background-color="green"}
 
 - Code review is not an evaluation of a finished product.
 - It is more rewarding to look at code that is WIP.
@@ -428,7 +413,7 @@ Another way to foster relevant feedback and discussions is to define a scope.
 :::
 
 
-### Make it formal -- but safe
+### Make it formal -- but safe {background-color="green"}
 
 Code review is more effective with a clear process (formal)
 
@@ -438,7 +423,7 @@ Code review meetings *must* remain inclusives and supporting spaces.
 **It's about creating an environment where people feel confident about
 discussing their code to each other.**
 
-### Overheard in the next meeting room
+### Overheard in the next meeting room {background-color="#C72A3D"}
 
 Author: *This loop I wrote looks too complicated to me.*
 
@@ -467,14 +452,14 @@ Reviewer: *Alhtough you could also do the same thing with `sed`.*
 
 Author (looking frustrated): *I have no idea what you're talking about.*
 
-### All feedback isn't helpful
+### All feedback isn't helpful {background-color="green"}
 
 ...at least for now.
 
 Reviewers with more programming experience/enthusiasm must be
 careful not to overwhelm beginners.
 
-### Use a checklist
+### Use a checklist {background-color="green"}
 
 -   [ ] Poor formatting.
 -   [ ] Dead code.
@@ -498,7 +483,7 @@ Start with the easy checks.
 
 :::
 
-### Critique the code, not the programmer
+### Critique the code, not the programmer {background-color="#C72A3D"}
 
 *You clearly made little effort in naming things&#x2026;*
 
@@ -506,13 +491,13 @@ Start with the easy checks.
 
 *I think this name is misleading*
 
-:::
+::: notes
 
 Feedback can be hard to stomach
 
 :::
 
-### Giving feedback is not trivial
+### Giving feedback is not trivial {background-color="green"}
 
 1.  Own you opinions.
 2.  Make it about the code.
@@ -524,13 +509,35 @@ Feedback can be hard to stomach
 *I think this function's purpose would be much clearer if it was given
 a more explicit name.. perhaps `apply_bwd_transform`?*
 
-### Define (and refine) a policy
+### Code review is both **technical** and **social**
+
+Code reviews can drive both inclusion and exclusion.
+
+. . .
+
+> A bad reviewer tries to force their preference on you. A good code
+> reviewer makes your code confrom to certain principles, but not
+> opinion. (*Quote from survey participant from Greiler, 2016*)
+
+### Define (and refine) a policy {background-color="green"}
 
 -   Well defined process.
 -   Default scope.
 -   Moderator(s).
 -   Code of conduct.
 -   Conflict resolution.
+
+::: notes
+
+A code reviwe is a conversation, potentially involving more than 2 people. as
+any converstaion it can shift to irrelevant topics, unproductive arguments or
+power struggles.
+
+A clear policy including moderation and conflict resolution procedures can
+guard against these.
+
+:::
+
 
 ### A culture of openess and collaboration
 
