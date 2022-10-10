@@ -578,3 +578,78 @@ guard against these.
 ### Thank you!
 
 Questions?
+
+### Part 3.1
+
+<h3>Code reviews for OSS: the case in Anaconda</h3>
+
+### A few words about Anaconda
+
+- Anaconda (prev. _Continuum Analytics_) is well-known in the Data Science community for its contribution to open source projects and the PyData ecosystem
+
+. . .
+
+- As a company, Anaconda is a  _RemoteFirst_ organisation
+
+	+ fully-distributed teams set to work asynchronously (w/ timely sync catch ups)
+
+::: notes
+
+Anaconda sustains NumFOCUS, which is the non-profit umbrella org. supporting the main projects in the Python scientific ecosystem
+
+:::
+
+### Code Review in Anaconda
+
+(_Asynch_) **Code Review** plays a huge role in Anaconda
+
+. . . 
+
+- Code review is a standard practice in all projects used in the majority of cases to:
+	+ Guarantee Software compliance (_audit_)
+	+ Enforce Team collaboration
+	+ Provide a welcoming and friendly  _onboarding_ for newcomers 	
+	
+. . .
+
+- Code Review sets and (easily) adapts differently depending on specific Projects requirements
+
+. . . 
+
+- The type of the team is very important, for example:
+	+ All IT-experts; IT people w/ diff experience or backgrounds; IT & non-IT people.. 
+
+### Code Review in Anaconda
+
+(Author's Checklist)
+
+- **Always** communicate up-front changes to an existing code base, i.e. _Open an Issue in the repo_
+
+	+ This also works well because GH allows to refer & close related issues in a PR
+	+ Helps also with changes already discussed / in progress
+
+. . . 
+
+For new-comers:
+
+- Always start with _small_ and self-contained things to easily get into the project and the process 	 
+
+### Code Review in Anaconda
+
+(Reviewer's Checklist)
+
+- TOP of the list: Being considerate; giving recommendations, and motivations (_why!_)
+
+. . . 
+
+Code Review is mostly based on integration and (generally) _non-functional_ requirements: 
+
+. . .
+
+- Check that (design) _concepts_ are not broken (e.g. APIs);
+- All changes are supported by automated tests;
+- Code organisation is compliant with project structure; 
+- _concistency_ (code and data) is respected wrt. to the project;
+- Suggest _more efficient // Pythonic_ implementations (if any)
+	+ Ignore all things that could be automated, e.g. via linters. 
+
