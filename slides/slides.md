@@ -273,40 +273,10 @@ But in research this is a whole other level of heterogeneity.
 
 :::
 
-### Finding reviewers {background-color="grey"}
+### Other challenges {background-color="grey"}
 
-What about "lone coders"?
-
-### Bad experiences {background-color="grey"}
-
-Code review can lead both to inclusion and exclusion.
-
-Dual nature: both **technical** and **social** practice.
-
-### Bad experiences {background-color="grey"}
-
--   Irrelevant feedback.
--   Petty arguments decoupled from overall scientific goal.
--   Power struggles.
-
-These must be and active effort to keep these under control. Similar
-to technical debt.
-
-. . .
-
-> A bad reviewer tries to force their preference on you. A good code
-> reviewer makes your code confrom to certain principles, but not
-> opinion. (*Quote from survey participant from Greiler, 2016*)
-
-### Lack of guidelines {background-color="grey"}
-
-https://dev-review.readthedocs.io/
-
-https://osc-delft.github.io/posts/2021/09/03/Research-Code-Review/
-
-https://www.djmannion.net/code_review/
-
-https://blog.hpc.qmul.ac.uk/code_review_whri.html
+- Finding reviewers
+- Finding guidance or mentors
 
 ### Part 3: Code review good practices {background-color="green" transition="zoom"}
 
@@ -521,6 +491,16 @@ Feedback can be hard to stomach
 *I think this function's purpose would be much clearer if it was given
 a more explicit name.. perhaps `apply_bwd_transform`?*
 
+### Code review is both **technical** and **social**
+
+Code reviews can drive both inclusion and exclusion.
+
+. . .
+
+> A bad reviewer tries to force their preference on you. A good code
+> reviewer makes your code confrom to certain principles, but not
+> opinion. (*Quote from survey participant from Greiler, 2016*)
+
 ### Define (and refine) a policy {background-color="green"}
 
 -   Well defined process.
@@ -528,6 +508,18 @@ a more explicit name.. perhaps `apply_bwd_transform`?*
 -   Moderator(s).
 -   Code of conduct.
 -   Conflict resolution.
+
+::: notes
+
+A code reviwe is a conversation, potentially involving more than 2 people. as
+any converstaion it can shift to irrelevant topics, unproductive arguments or
+power struggles.
+
+A clear policy including moderation and conflict resolution procedures can
+guard against these.
+
+:::
+
 
 ### A culture of openess and collaboration
 
