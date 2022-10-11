@@ -183,7 +183,7 @@ Bachelli and Bird 2013</li>
 <h3>Two contexts</h3>
 <ol type="1">
 <li>Individual developers writing their own specific software.</li>
-<li>Developers collaboration on a common codebase.
+<li>Developers collaborating on a common codebase.
 <ul>
 <li>Code review as gatekeeping.</li>
 </ul></li>
@@ -304,7 +304,7 @@ transfer</h3>
 <p>Code review is peer learning.</p>
 <ul>
 <li>Spread of good practices.</li>
-<li>Homogeneisation of styles and practices</li>
+<li>Homogeneisation of styles and practices.</li>
 </ul>
 <div class="fragment">
 <div class="sourceCode" id="cb1"><pre
@@ -343,7 +343,7 @@ data-background-color="grey">
 <p>Two complementary courses of actions:</p>
 <div>
 <ul>
-<li class="fragment">Regularly reflect process and follow good
+<li class="fragment">Regularly reflect on process and follow trusted
 practices.</li>
 <li class="fragment">Acknowledge code review as a worthy investment:
 <ul>
@@ -407,8 +407,8 @@ company. They share common skill base, vocabulary, interest in SE.</p>
 data-background-color="grey">
 <h3 data-background-color="grey">Other challenges</h3>
 <ul>
-<li>Finding reviewers</li>
-<li>Finding guidance or mentors</li>
+<li>Finding reviewers.</li>
+<li>Finding guidance or mentors.</li>
 </ul>
 </section>
 <section id="part-3-code-review-good-practices" class="slide level3"
@@ -431,13 +431,14 @@ data-background-color="#a5f99e">
 <li>Doesn’t feel like a big commitment.</li>
 <li>Code review can be a very demanding activity.</li>
 </ul>
-<p>Remember that software isn’t the primary driver.</p>
+<p>Remember that software is often not the primary driver.</p>
 </section>
 <section id="avoid-comfort-mode" class="slide level3"
 data-background-color="#a5f99e">
 <h3 data-background-color="#a5f99e">Avoid comfort mode</h3>
-<p><em>That doesn’t look quite right but I guess that’s okay…</em></p>
-<p><em>I just must have missed something</em></p>
+<p><em>That doesn’t look right but I guess that’s okay…</em></p>
+<p><em>I just must have missed something…</em></p>
+<div class="fragment">
 <p>In code review meetings, authors should make is easy for reviewers to
 interject.</p>
 <aside class="notes">
@@ -446,6 +447,7 @@ questions. Especially if they have less experience than the author.</p>
 <p>Easy to think reviewers have all the responsability but actually
 authors have a huge impact on the code review success.</p>
 </aside>
+</div>
 </section>
 <section id="the-authors-part" class="slide level3"
 data-background-color="#eaaeb5">
@@ -459,27 +461,22 @@ alt="A very scarce description" />
 <section id="the-authors-part-1" class="slide level3"
 data-background-color="#eaaeb5">
 <h3 data-background-color="#eaaeb5">The author’s part</h3>
-<figure>
-<img data-src="img/comfort_mr_commits.png"
-alt="A very scarce description" />
-<figcaption aria-hidden="true">A very scarce description</figcaption>
-</figure>
+<p><img data-src="img/comfort_mr_commits.png" /></p>
 </section>
 <section id="the-authors-part-2" class="slide level3"
 data-background-color="#a5f99e">
 <h3 data-background-color="#a5f99e">The author’s part</h3>
 <ul>
-<li>Keep it small! (~30’)</li>
+<li>Keep it small! (~30’).</li>
 <li>Provide a description of the purpose and structure of the code.</li>
 <li>Think ahead what reviewers will and will not be familiar with
 <ul>
 <li>Specific libraries?</li>
 <li>Specific domain knowledge?</li>
 </ul></li>
-<li>Ensure minimum quality standard (<em>e.g.</em> style, naming)</li>
+<li>Ensure minimum quality standard (<em>e.g.</em> style, naming).</li>
 </ul>
-<p>Put yourself into your reviewer(s)’ shoes: what would you want to be
-told if asked to review your code?</p>
+<p>As a reviewer, think from your reviewer(s)’ perspective.</p>
 <aside class="notes">
 <p>A code review’s success partly rests on the author’s shoulder.
 Authors are not entirely responsible for the review success, but can
@@ -550,10 +547,10 @@ irrelevant</h3>
 data-background-color="#a5f99e">
 <h3 data-background-color="#a5f99e">Make it formal – but safe</h3>
 <p>Code review is more effective with a clear process (formal)</p>
-<p><em>At the same time,</em> Code review meetings <em>must</em> remain
-inclusives and supporting spaces.</p>
+<p><em>At the same time,</em> Code review <em>must</em> occur within an
+inclusive and supporting space.</p>
 <p><strong>It’s about creating an environment where people feel
-confident about discussing their code to each other.</strong></p>
+confident about discussing their code with each other.</strong></p>
 </section>
 <section id="overheard-in-the-next-meeting-room" class="slide level3"
 data-background-color="#eaaeb5">
@@ -631,7 +628,7 @@ data-background-color="#eaaeb5">
 programmer</h3>
 <p><em>You clearly made little effort in naming things…</em></p>
 <p><em>You should name this differently</em></p>
-<p><em>I think this name is misleading</em></p>
+<p><em>This doesn’t make sense</em></p>
 <aside class="notes">
 <p>Feedback can be hard to stomach</p>
 </aside>
@@ -646,20 +643,23 @@ data-background-color="#a5f99e">
 <li>Suggest an alternative.</li>
 </ol>
 <div class="fragment">
+<p><del><em>This name doesn’t make sense</em></del></p>
+</div>
+<div class="fragment">
 <p><em>I think this function’s purpose would be much clearer if it was
 given a more explicit name.. perhaps
 <code>apply_bwd_transform</code>?</em></p>
 </div>
 </section>
 <section id="code-review-is-both-technical-and-social"
-class="slide level3">
-<h3>Code review is both <strong>technical</strong> and
-<strong>social</strong></h3>
+class="slide level3" data-background-color="#a5f99e">
+<h3 data-background-color="#a5f99e">Code review is both
+<strong>technical</strong> and <strong>social</strong></h3>
 <p>Code reviews can drive both inclusion and exclusion.</p>
 <div class="fragment">
 <blockquote>
 <p>A bad reviewer tries to force their preference on you. A good code
-reviewer makes your code confrom to certain principles, but not opinion.
+reviewer makes your code conform to certain principles, but not opinion.
 (<em>Quote from survey participant from Greiler, 2016</em>)</p>
 </blockquote>
 </div>
@@ -683,8 +683,9 @@ procedures can guard against these.</p>
 </aside>
 </section>
 <section id="a-culture-of-openess-and-collaboration"
-class="slide level3">
-<h3>A culture of openess and collaboration</h3>
+class="slide level3" data-background-color="#a5f99e">
+<h3 data-background-color="#a5f99e">A culture of openess and
+collaboration</h3>
 <ul>
 <li>Components of a successful software project are
 <ul>
