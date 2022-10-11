@@ -72,7 +72,7 @@ Thibault Lestang. Photo cred: Neil Montague.</p>
 ### Two contexts
 
 1.  Individual developers writing their own specific software.
-2.  Developers collaboration on a common codebase.
+2.  Developers collaborating on a common codebase.
     -   Code review as gatekeeping.
 
 ### Research on code reviews
@@ -189,7 +189,7 @@ Code review had an indicrect impact: people talk to each other more.
 Code review is peer learning.
 
 - Spread of good practices.
-- Homogeneisation of styles and practices
+- Homogeneisation of styles and practices.
 
 . . .
 
@@ -238,7 +238,7 @@ Two complementary courses of actions:
 
 ::: incremental
 
--   Regularly reflect process and follow good practices.
+-   Regularly reflect on process and follow trusted practices.
 -   Acknowledge code review as a worthy investment:
     -   "middle-term" benefits for individuals.
     -   Short and long term benefits for collectives.
@@ -300,8 +300,8 @@ But in research this is a whole other level of heterogeneity.
 
 ### Other challenges {background-color="grey"}
 
-- Finding reviewers
-- Finding guidance or mentors
+- Finding reviewers.
+- Finding guidance or mentors.
 
 ### Part 3: Code review good practices {background-color="#a5f99e" transition="zoom"}
 
@@ -323,13 +323,15 @@ observations/experimentation in a research context.
 -   Doesn't feel like a big commitment.
 -   Code review can be a very demanding activity.
 
-Remember that software isn't the primary driver.
+Remember that software is often not the primary driver.
 
 ### Avoid comfort mode {background-color="#a5f99e"}
 
-*That doesn't look quite right but I guess that's okay...*
+*That doesn't look right but I guess that's okay...*
 
-*I just must have missed something*
+*I just must have missed something...*
+
+. . .
 
 In code review meetings, authors should make is easy for reviewers to
 interject.
@@ -350,19 +352,18 @@ huge impact on the code review success.
 
 ### The author's part {background-color="#eaaeb5"}
 
-![A very scarce description](img/comfort_mr_commits.png)
+![](img/comfort_mr_commits.png)
 
 ### The author's part {background-color="#a5f99e"}
 
--   Keep it small! (~30')
+-   Keep it small! (~30').
 -   Provide a description of the purpose and structure of the code.
 -   Think ahead what reviewers will and will not be familiar with
     -   Specific libraries?
     -   Specific domain knowledge?
--   Ensure minimum quality standard (*e.g.* style, naming)
+-   Ensure minimum quality standard (*e.g.* style, naming).
 
-Put yourself into your reviewer(s)' shoes: what would you want to be
-told if asked to review your code?
+As a reviewer, think from your reviewer(s)' perspective.
 
 ::: notes
 
@@ -441,10 +442,10 @@ Another way to foster relevant feedback and discussions is to define a scope.
 Code review is more effective with a clear process (formal)
 
 *At the same time,*
-Code review meetings *must* remain inclusives and supporting spaces.
+Code review *must* occur within an inclusive and supporting space.
 
 **It's about creating an environment where people feel confident about
-discussing their code to each other.**
+discussing their code with each other.**
 
 ### Overheard in the next meeting room {background-color="#eaaeb5"}
 
@@ -512,7 +513,7 @@ Start with the easy checks.
 
 *You should name this differently*
 
-*I think this name is misleading*
+*This doesn't make sense*
 
 ::: notes
 
@@ -529,17 +530,21 @@ Feedback can be hard to stomach
 
 . . .
 
+~~*This name doesn't make sense*~~
+
+. . . 
+
 *I think this function's purpose would be much clearer if it was given
 a more explicit name.. perhaps `apply_bwd_transform`?*
 
-### Code review is both **technical** and **social**
+### Code review is both **technical** and **social** {background-color="#a5f99e"}
 
 Code reviews can drive both inclusion and exclusion.
 
 . . .
 
 > A bad reviewer tries to force their preference on you. A good code
-> reviewer makes your code confrom to certain principles, but not
+> reviewer makes your code conform to certain principles, but not
 > opinion. (*Quote from survey participant from Greiler, 2016*)
 
 ### Define (and refine) a policy {background-color="#a5f99e"}
@@ -562,7 +567,7 @@ guard against these.
 :::
 
 
-### A culture of openess and collaboration
+### A culture of openess and collaboration {background-color="#a5f99e"}
 
 - Components of a successful software project are
   + Code
