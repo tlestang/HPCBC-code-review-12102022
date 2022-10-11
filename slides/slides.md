@@ -10,7 +10,7 @@ title-slide-attributes:
     data-background-size: contain
 ---
 
-### Part 1
+### Part 0
 
 <h3>What is a code review?</h3>
 
@@ -37,6 +37,21 @@ Main benefits:
 
 :::
 
+### Not a peer review for code
+
+-   Code review **throughout the research process**:
+    -   Frequent
+    -   Informal
+    -   Low stakes
+-   Commonly referred as "Modern Code Review" in the SE literature.
+    Bachelli and Bird 2013
+-   Can be _asynchronous_ (GitHub's Pull Requests) or _synchronous_ (in
+    person chat).
+
+### CODECHECK
+
+![codecheck.org.uk](img/checkers.png)
+
 ### From formal inspections to code review
 
 ![](img/code_inspection_and_gitlab.png)
@@ -53,21 +68,6 @@ Main benefits:
 [(https://magrilab.ae.ic.ac.uk)](https://magrilab.ae.ic.ac.uk/group.html),
 Thibault Lestang. Photo cred: Neil Montague.</p>
 <p style="font-size: 0.4em">Department of Aeronautics, Imperial College London</p>
-
-### Not a peer review for code
-
--   Code review **throughout the research process**:
-    -   Frequent
-    -   Informal
-    -   Low stakes
--   Commonly referred as "Modern Code Review" in the SE literature.
-    Bachelli and Bird 2013
--   Can be _asynchronous_ (GitHub's Pull Requests) or _synchronous_ (in
-    person chat).
-
-### CODECHECK
-
-![codecheck.org.uk](img/checkers.png)
 
 ### Two contexts
 
@@ -575,6 +575,6 @@ guard against these.
   + Communication
 - Research code review goes along with collective ownersip of research project.
 
-::: notes
+### Thank you!
 
-:::
+Questions?
