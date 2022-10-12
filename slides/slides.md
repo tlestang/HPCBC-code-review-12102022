@@ -423,6 +423,21 @@ Feedback is likely to be more targeted and impactful.
 
 :::
 
+### Expections for authors at Anaconda
+
+(Author's Checklist)
+
+- **Always** communicate up-front changes to an existing code base, i.e. _Open an Issue in the repo_
+
+	+ This also works well because GH allows to refer & close related issues in a PR
+	+ Helps also with changes already discussed / in progress
+
+. . .
+
+For new-comers:
+
+- Always start with _small_ and self-contained things to easily get into the project and the process
+
 ### Define (and enforce) a scope {background-color="#a5f99e"}
 
 Example default scope: understandability
@@ -598,21 +613,6 @@ guard against these.
 ### Thank you!
 
 Questions?
-
-### Code Review in Anaconda
-
-(Author's Checklist)
-
-- **Always** communicate up-front changes to an existing code base, i.e. _Open an Issue in the repo_
-
-	+ This also works well because GH allows to refer & close related issues in a PR
-	+ Helps also with changes already discussed / in progress
-
-. . .
-
-For new-comers:
-
-- Always start with _small_ and self-contained things to easily get into the project and the process
 
 ### Code Review in Anaconda
 
