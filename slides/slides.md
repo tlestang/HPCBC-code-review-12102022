@@ -551,37 +551,30 @@ guard against these.
 
 :::
 
-### Part 3.1
-
-<h3>Code reviews for OSS: the case in Anaconda</h3>
-
-### A few words about Anaconda
-
-- Anaconda (prev. _Continuum Analytics_) is well-known in the Data Science community for its contribution to open source projects and the PyData ecosystem
-
-. . .
-
-- As a company, Anaconda is a  _RemoteFirst_ organisation
-
-	+ fully-distributed teams set to work asynchronously (w/ timely sync catch ups)
+### Code Review at Anaconda
 
 ::: notes
 
-Anaconda sustains NumFOCUS, which is the non-profit umbrella org. supporting the main projects in the Python scientific ecosystem
+Anaconda  is well-known in the Data Science community for its contribution to open source projects and the PyData ecosystem - in fact Anaconda sutains NumFOCUS which is the non-profit umbrella organisation supporting the main projects in Python Scientific Ecosystem. 
+
+As a company, Anaconda is a  _RemoteFirst_ organisation
+
+fully-distributed teams set to work asynchronously (w/ timely sync catch ups)
 
 :::
 
-### Code Review in Anaconda
+### Code Review at Anaconda
 
 (_Asynch_) **Code Review** plays a huge role in Anaconda
 
 . . . 
 
-- Code review is a standard practice in all projects used in the majority of cases to:
-	+ Guarantee Software compliance (_audit_)
+- Code review is a standard practice in all projects being used to:
+
 	+ Enforce Team collaboration
 	+ Provide a welcoming and friendly  _onboarding_ for newcomers 	
-	
+	+ Guarantee Software compliance (_audit_)
+
 . . .
 
 - Code Review sets and (easily) adapts differently depending on specific Projects requirements
@@ -589,9 +582,10 @@ Anaconda sustains NumFOCUS, which is the non-profit umbrella org. supporting the
 . . . 
 
 - The type of the team is very important, for example:
+
 	+ All IT-experts; IT people w/ diff experience or backgrounds; IT & non-IT people.. 
 
-### Code Review in Anaconda
+### Code Review at Anaconda
 
 (Author's Checklist)
 
@@ -623,4 +617,12 @@ Code Review is mostly based on integration and (generally) _non-functional_ requ
 - Code organisation is compliant with project structure; 
 - _concistency_ (code and data) is respected wrt. to the project;
 - Suggest _more efficient // Pythonic_ implementations (if any)
+
 	+ Ignore all things that could be automated, e.g. via linters. 
+
+::: notes
+
+(Top list) This means that code review is generally carried out by more experienced engineers first, with sometimes junior engineers being asked to assist
+Explaining motivations of comments is extremely important and it is what is primarly considered as a good and considerate CR
+
+:::
