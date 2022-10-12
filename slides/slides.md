@@ -575,6 +575,82 @@ guard against these.
   + Communication
 - Research code review goes along with collective ownersip of research project.
 
+### Code Review at Anaconda
+
+::: notes
+
+Anaconda  is well-known in the Data Science community for its contribution to open source projects and the PyData ecosystem - in fact Anaconda sutains NumFOCUS which is the non-profit umbrella organisation supporting the main projects in Python Scientific Ecosystem. 
+
+As a company, Anaconda is a  _RemoteFirst_ organisation
+
+fully-distributed teams set to work asynchronously (w/ timely sync catch ups)
+
+:::
+
+### Code Review at Anaconda
+
+(_Asynch_) **Code Review** plays a huge role in Anaconda
+
+. . . 
+
+- Code review is a standard practice in all projects being used to:
+
+	+ Enforce Team collaboration
+	+ Provide a welcoming and friendly  _onboarding_ for newcomers 	
+	+ Guarantee Software compliance (_audit_)
+
+. . .
+
+- Code Review sets and (easily) adapts differently depending on specific Projects requirements
+
+. . . 
+
+- The type of the team is very important, for example:
+
+	+ All IT-experts; IT people w/ diff experience or backgrounds; IT & non-IT people.. 
+
+### Code Review at Anaconda
+
+(Author's Checklist)
+
+- **Always** communicate up-front changes to an existing code base, i.e. _Open an Issue in the repo_
+
+	+ This also works well because GH allows to refer & close related issues in a PR
+	+ Helps also with changes already discussed / in progress
+
+. . . 
+
+For new-comers:
+
+- Always start with _small_ and self-contained things to easily get into the project and the process 	 
+
+### Code Review in Anaconda
+
+(Reviewer's Checklist)
+
+- TOP of the list: Being considerate; giving recommendations, and motivations (_why!_)
+
+. . . 
+
+Code Review is mostly based on integration and (generally) _non-functional_ requirements: 
+
+. . .  
+
+- Check that (design) _concepts_ are not broken (e.g. APIs);
+- All changes are supported by automated tests;
+- Code organisation is compliant with project structure; 
+- _concistency_ (code and data) is respected wrt. to the project;
+- Suggest _more efficient // Pythonic_ implementations (if any)
+
+	+ Ignore all things that could be automated, e.g. via linters. 
+
+::: notes
+
+(Top list) This means that code review is generally carried out by more experienced engineers first, with sometimes junior engineers being asked to assist
+Explaining motivations of comments is extremely important and it is what is primarly considered as a good and considerate CR
+
+:::
+
 ### Thank you!
 
 Questions?
