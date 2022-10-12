@@ -601,20 +601,7 @@ guard against these.
 
 :::
 
-
-### A culture of openess and collaboration {background-color="#a5f99e"}
-
-- Components of a successful software project are
-  + Code
-  + People
-  + Communication
-- Research code review goes along with collective ownersip of research project.
-
-### Thank you!
-
-Questions?
-
-### Code Review in Anaconda
+### Reviewing code at Anaconda
 
 (Reviewer's Checklist)
 
@@ -632,3 +619,18 @@ Code Review is mostly based on integration and (generally) _non-functional_ requ
 - _concistency_ (code and data) is respected wrt. to the project;
 - Suggest _more efficient // Pythonic_ implementations (if any)
 	+ Ignore all things that could be automated, e.g. via linters.
+
+
+
+### A culture of openess and collaboration {background-color="#a5f99e"}
+
+- Components of a successful software project are
+  + Code
+  + People
+  + Communication
+- Research code review goes along with collective ownersip of research project.
+
+### Thank you!
+
+Questions?
+
