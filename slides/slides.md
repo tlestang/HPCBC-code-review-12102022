@@ -60,6 +60,26 @@ Main benefits:
 
 ![](img/cr-cycle.png)
 
+### Code Review at Anaconda
+
+(_Asynch_) **Code Review** plays a huge role in Anaconda
+
+. . .
+
+- Code review is a standard practice in all projects used in the majority of cases to:
+	+ Guarantee Software compliance (_audit_)
+	+ Enforce Team collaboration
+	+ Provide a welcoming and friendly  _onboarding_ for newcomers
+
+. . .
+
+- Code Review sets and (easily) adapts differently depending on specific Projects requirements
+
+. . .
+
+- The type of the team is very important, for example:
+	+ All IT-experts; IT people w/ diff experience or backgrounds; IT & non-IT people..
+
 ### Synchronous Code Review
 
 ![](img/sync_review_imperial.jpg){width=65%}
@@ -106,7 +126,7 @@ means identifying defects and improving the code.
 
 Code improvements are changes that do not affect the functionalities
 but make the code more readable or maintainable. You can think of
-complying to a naming scheme, identifying code smells, or adhering to 
+complying to a naming scheme, identifying code smells, or adhering to
 existing software design choices.
 
 :::
@@ -532,7 +552,7 @@ Feedback can be hard to stomach
 
 ~~*This name doesn't make sense*~~
 
-. . . 
+. . .
 
 *I think this function's purpose would be much clearer if it was given
 a more explicit name.. perhaps `apply_bwd_transform`?*
@@ -581,26 +601,6 @@ Questions?
 
 ### Code Review in Anaconda
 
-(_Asynch_) **Code Review** plays a huge role in Anaconda
-
-. . . 
-
-- Code review is a standard practice in all projects used in the majority of cases to:
-	+ Guarantee Software compliance (_audit_)
-	+ Enforce Team collaboration
-	+ Provide a welcoming and friendly  _onboarding_ for newcomers 	
-	
-. . .
-
-- Code Review sets and (easily) adapts differently depending on specific Projects requirements
-
-. . . 
-
-- The type of the team is very important, for example:
-	+ All IT-experts; IT people w/ diff experience or backgrounds; IT & non-IT people.. 
-
-### Code Review in Anaconda
-
 (Author's Checklist)
 
 - **Always** communicate up-front changes to an existing code base, i.e. _Open an Issue in the repo_
@@ -608,11 +608,11 @@ Questions?
 	+ This also works well because GH allows to refer & close related issues in a PR
 	+ Helps also with changes already discussed / in progress
 
-. . . 
+. . .
 
 For new-comers:
 
-- Always start with _small_ and self-contained things to easily get into the project and the process 	 
+- Always start with _small_ and self-contained things to easily get into the project and the process
 
 ### Code Review in Anaconda
 
@@ -620,16 +620,15 @@ For new-comers:
 
 - TOP of the list: Being considerate; giving recommendations, and motivations (_why!_)
 
-. . . 
+. . .
 
-Code Review is mostly based on integration and (generally) _non-functional_ requirements: 
+Code Review is mostly based on integration and (generally) _non-functional_ requirements:
 
 . . .
 
 - Check that (design) _concepts_ are not broken (e.g. APIs);
 - All changes are supported by automated tests;
-- Code organisation is compliant with project structure; 
+- Code organisation is compliant with project structure;
 - _concistency_ (code and data) is respected wrt. to the project;
 - Suggest _more efficient // Pythonic_ implementations (if any)
-	+ Ignore all things that could be automated, e.g. via linters. 
-
+	+ Ignore all things that could be automated, e.g. via linters.
