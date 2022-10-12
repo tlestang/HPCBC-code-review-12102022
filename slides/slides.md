@@ -216,7 +216,7 @@ Dataclasses
 
 :::
 
-### Part 2: Challenges {background-color="grey" transition="zoom"}
+### Part 2: Challenges {background-color="#e4e4e4" transition="zoom"}
 
 A lot of good practices around...
 
@@ -232,7 +232,7 @@ this is not happening.
 
 :::
 
-### Code review is time and energy {background-color="grey"}
+### Code review is time and energy {background-color="#e4e4e4"}
 
 Two complementary courses of actions:
 
@@ -258,7 +258,7 @@ your code.
 
 :::
 
-### Being protective about code {background-color="grey"}
+### Being protective about code {background-color="#e4e4e4"}
 
 1. There can be some unhealthy competition going on.
 2. A large number of researchers feel shy about their coding practices:
@@ -281,7 +281,7 @@ not used to share code. Code review can help turn the tide.
 
 :::
 
-### Strong heterogeneity among team members {background-color="grey"}
+### Strong heterogeneity among team members {background-color="#e4e4e4"}
 
 -   Experience.
 -   Skills (*e.g.* programming languages).
@@ -298,7 +298,7 @@ But in research this is a whole other level of heterogeneity.
 
 :::
 
-### Other challenges {background-color="grey"}
+### Other challenges {background-color="#e4e4e4"}
 
 - Finding reviewers.
 - Finding guidance or mentors.
