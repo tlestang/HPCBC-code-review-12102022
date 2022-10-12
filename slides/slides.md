@@ -579,26 +579,6 @@ guard against these.
 
 Questions?
 
-### Part 3.1
-
-<h3>Code reviews for OSS: the case in Anaconda</h3>
-
-### A few words about Anaconda
-
-- Anaconda (prev. _Continuum Analytics_) is well-known in the Data Science community for its contribution to open source projects and the PyData ecosystem
-
-. . .
-
-- As a company, Anaconda is a  _RemoteFirst_ organisation
-
-	+ fully-distributed teams set to work asynchronously (w/ timely sync catch ups)
-
-::: notes
-
-Anaconda sustains NumFOCUS, which is the non-profit umbrella org. supporting the main projects in the Python scientific ecosystem
-
-:::
-
 ### Code Review in Anaconda
 
 (_Asynch_) **Code Review** plays a huge role in Anaconda
